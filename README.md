@@ -1,6 +1,6 @@
 # Daksha Systems website
 
-Static site for Daksha Systems, live at **https://airrakeshkumarsharma.github.io/daksha-website/**, served by GitHub Pages from the `docs/` folder. No framework and no dependencies: `build.js` (Node 18+) writes every page from `src/`.
+Static site for Daksha Systems, live at **https://dakshasystems.com/**, served by GitHub Pages from the `docs/` folder. No framework and no dependencies: `build.js` (Node 18+) writes every page from `src/`.
 
 ## Edit and rebuild
 
@@ -44,16 +44,23 @@ node build.js && node check.js && git add -A && git commit -m "Update site" && g
 
 The live site updates a minute or two after the push.
 
-## Use your own domain later
+## Domain: dakshasystems.com
 
-`dakshasystems.in` belongs to a different company (Daksha System & Services Pvt. Ltd.). Don't use it. Once you buy your own domain:
+The domain is registered at Hostinger. `src/config.js` has `siteUrl: "https://dakshasystems.com"` and `customDomain: "dakshasystems.com"` (the build writes `docs/CNAME`). DNS records at Hostinger → Domains → dakshasystems.com → DNS / Nameservers:
 
-1. In `src/config.js` set `siteUrl` to `https://www.yourdomain.in` and `customDomain` to `www.yourdomain.in`, then rebuild and push. The build writes `docs/CNAME`.
-2. At your domain registrar, add these DNS records (check them against https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site):
-   - `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `CNAME` for `www` → `airrakeshkumarsharma.github.io`
-3. Repo → **Settings → Pages** → **Custom domain**: enter the same domain. When DNS is ready, tick **Enforce HTTPS**.
-4. Add the site to Google Search Console and submit `<siteUrl>/sitemap.xml`. Create or claim the Google Business Profile with the same name, address and phone.
+| Type | Name | Points to |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | airrakeshkumarsharma.github.io |
+
+Delete any other `A` or `AAAA` record on `@` and any old `www` record (Hostinger's parking page). Once DNS works, tick **Enforce HTTPS** in the repo's **Settings → Pages**. Check the records against https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site.
+
+`dakshasystems.in` (.in) belongs to a different company (Daksha System & Services Pvt. Ltd.). Don't use it.
+
+Add the site to Google Search Console and submit `https://dakshasystems.com/sitemap.xml`. Create or claim the Google Business Profile with the same name, address and phone.
 
 ## Payment gateway checklist (Razorpay / Cashfree / PayU)
 

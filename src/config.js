@@ -3,11 +3,11 @@
    (Razorpay, Cashfree, PayU) will reject the site until they match your KYC documents exactly. */
 module.exports = {
   /* Where the site is live, without a trailing slash. Every link, canonical URL and the sitemap use it.
-     When you own a domain: set siteUrl to e.g. "https://www.yourdomain.in" and customDomain to
-     "www.yourdomain.in" (that writes docs/CNAME), then point the domain's DNS at GitHub Pages.
-     Note: dakshasystems.in belongs to a different company — don't use it. */
-  siteUrl: "https://airrakeshkumarsharma.github.io/daksha-website",
-  customDomain: null,
+     customDomain writes docs/CNAME. Without a custom domain the site runs at
+     https://airrakeshkumarsharma.github.io/daksha-website (set siteUrl to that and customDomain to null).
+     Note: dakshasystems.in (.in, not .com) belongs to a different company — don't use it. */
+  siteUrl: "https://dakshasystems.com",
+  customDomain: "dakshasystems.com",           // DNS at Hostinger points here; GitHub Pages serves it
   brand: "Daksha Systems",
   /* Legal identity from the GST certificate. Printed ONLY inside the policy pages (privacy, terms,
      refund, shipping, warranty), never in the header, footer, home, about or contact pages. */
