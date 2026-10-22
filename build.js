@@ -38,6 +38,7 @@ fs.writeFileSync(path.join(OUT, "llms-full.txt"), LLMS.full(pages));
 const cname = path.join(OUT, "CNAME");
 if (S.customDomain) fs.writeFileSync(cname, S.customDomain + "\n"); else fs.rmSync(cname, { force: true });
 fs.writeFileSync(path.join(OUT, ".nojekyll"), "");
+if (S.indexNowKey) fs.writeFileSync(path.join(OUT, `${S.indexNowKey}.txt`), S.indexNowKey);
 fs.writeFileSync(path.join(OUT, "site.webmanifest"), JSON.stringify({ name: S.brand, short_name: "Daksha", start_url: BASE + "/",
   display: "browser", background_color: "#1E1C17", theme_color: "#1E1C17",
   icons: [{ src: BASE + "/assets/icon-512.png", sizes: "512x512", type: "image/png" }, { src: BASE + "/assets/mark.svg", sizes: "any", type: "image/svg+xml" }] }, null, 2));

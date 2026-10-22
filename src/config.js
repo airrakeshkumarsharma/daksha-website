@@ -7,7 +7,8 @@ module.exports = {
      https://airrakeshkumarsharma.github.io/daksha-website (set siteUrl to that and customDomain to null).
      Note: dakshasystems.in (.in, not .com) belongs to a different company — don't use it. */
   siteUrl: "https://dakshasystems.com",
-  customDomain: "dakshasystems.com",           // DNS at Hostinger points here; GitHub Pages serves it
+  customDomain: "dakshasystems.com",
+  indexNowKey: "c8c9d9d1bb770a6cab0c035b3366adbe",   // public key file for IndexNow (Bing, Yandex…); `node indexnow.js` pings them after a deploy           // DNS at Hostinger points here; GitHub Pages serves it
   brand: "Daksha Systems",
   /* Legal identity from the GST certificate. Printed ONLY inside the policy pages (privacy, terms,
      refund, shipping, warranty), never in the header, footer, home, about or contact pages. */

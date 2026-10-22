@@ -44,6 +44,14 @@ node build.js && node check.js && git add -A && git commit -m "Update site" && g
 
 The live site updates a minute or two after the push.
 
+Once the change is live, tell Bing and other IndexNow search engines (this also helps ChatGPT and Copilot search find new pages):
+
+```bash
+node indexnow.js
+```
+
+AI assistants read `https://dakshasystems.com/llms.txt` (summary) and `llms-full.txt` (every page as text). Both are rebuilt by `node build.js`.
+
 ## Domain: dakshasystems.com
 
 The domain is registered at Hostinger. `src/config.js` has `siteUrl: "https://dakshasystems.com"` and `customDomain: "dakshasystems.com"` (the build writes `docs/CNAME`). DNS records at Hostinger → Domains → dakshasystems.com → DNS / Nameservers:
