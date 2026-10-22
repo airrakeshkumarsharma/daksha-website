@@ -1,0 +1,20 @@
+{
+  "name": "Daksha Systems",
+  "short_name": "Daksha",
+  "start_url": "/daksha-website/",
+  "display": "browser",
+  "background_color": "#1E1C17",
+  "theme_color": "#1E1C17",
+  "icons": [
+    {
+      "src": "/daksha-website/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/daksha-website/assets/mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

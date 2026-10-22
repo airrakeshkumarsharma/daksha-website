@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://airrakeshkumarsharma.github.io/daksha-website/sitemap.xml
