@@ -1,7 +1,7 @@
 /* Marketing pages. Each export returns { path, title, description, body, schema? }. */
 const fs = require("fs");
 const path = require("path");
-const { esc, waLink, crumbsHtml, WA_ICON, PHONE_ICON, SERVICES, addrLine, url, S } = require("./layout");
+const { real, esc, waLink, crumbsHtml, WA_ICON, PHONE_ICON, SERVICES, addrLine, url, S } = require("./layout");
 const { ICONS } = require("./services");
 const PRODUCTS = require("./products");
 
@@ -414,7 +414,7 @@ const about = () => ({
   <div class="card" style="box-shadow:0 8px 0 var(--ink)">
     <h3>Business details</h3>
     <table style="width:100%;border-collapse:collapse;font-size:.95rem">
-      ${[["Business", S.brand], ["Type", `${S.constitution}, GST registered`], ["GSTIN", S.gstin], ["Address", addrLine], ["Phone", S.phone], ["Email", S.email], ["Hours", S.hours]]
+      ${[["Business", S.brand], ["Type", `${S.constitution}, GST registered`], ["GSTIN", S.gstin], ["Address", addrLine], ["Phone", S.phone], ["Email", S.email], ["Hours", S.hours]].filter(([, v]) => real(v))
         .map(([k, v]) => `<tr><td style="padding:10px 0;color:var(--text-2);width:34%;vertical-align:top;border-bottom:1px solid var(--rule)">${k}</td><td style="padding:10px 0;font-weight:600;border-bottom:1px solid var(--rule)">${esc(v)}</td></tr>`).join("")}
     </table>
   </div>
@@ -430,8 +430,8 @@ const contact = () => ({
 <section><div class="wrap">
   <div class="cards">
     <div class="card"><h3>WhatsApp</h3><p><a href="${waLink("Hi Daksha Systems, ")}" target="_blank" rel="noopener">${esc(S.phone)}</a></p><p style="margin-top:8px">Send photos of the problem or details of what you need.</p></div>
-    <div class="card"><h3>Call</h3><p><a href="tel:${S.phoneE164}">${esc(S.phone)}</a></p><p style="margin-top:8px">${esc(S.hours)}</p></div>
-    <div class="card"><h3>Email</h3><p><a href="mailto:${esc(S.email)}">${esc(S.email)}</a></p><p style="margin-top:8px">For quotes, invoices and policy questions.</p></div>
+    <div class="card"><h3>Call</h3><p><a href="tel:${S.phoneE164}">${esc(S.phone)}</a></p><p style="margin-top:8px">${real(S.hours) ? esc(S.hours) : "Calls are answered during business hours."}</p></div>
+    ${real(S.email) ? `<div class="card"><h3>Email</h3><p><a href="mailto:${esc(S.email)}">${esc(S.email)}</a></p><p style="margin-top:8px">For quotes, invoices and policy questions.</p></div>` : ""}
   </div>
   <div class="split" style="margin-top:56px;align-items:start">
     <div class="prose">
@@ -439,7 +439,7 @@ const contact = () => ({
       <p><b>${esc(S.brand)}</b><br>${esc(addrLine)}</p>
       <p>GSTIN: <b>${esc(S.gstin)}</b></p>
       <h2>Complaints &amp; grievances</h2>
-      <p>If something went wrong, write to our grievance officer at <a href="mailto:${esc(S.grievance.email)}">${esc(S.grievance.email)}</a> (details in our <a href="/privacy-policy/#grievance-officer">Privacy Policy</a>). We acknowledge within 48 hours and aim to resolve within 30 days.</p>
+      <p>If something went wrong, ${real(S.grievance.email) ? `write to our grievance officer at <a href="mailto:${esc(S.grievance.email)}">${esc(S.grievance.email)}</a>` : `call or WhatsApp us at <a href="tel:${S.phoneE164}">${esc(S.phone)}</a> and ask for our grievance officer`} (details in our <a href="/privacy-policy/#grievance-officer">Privacy Policy</a>). We acknowledge within 48 hours and aim to resolve within 30 days.</p>
     </div>
     ${S.geo ? `<div class="map"><iframe title="Map to ${esc(S.brand)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=${S.geo.lat},${S.geo.lng}&z=16&output=embed"></iframe></div>`
       : `<div class="map" style="display:grid;place-items:center;text-align:center;padding:24px"><p class="mono" style="color:var(--text-2)">${esc(S.address.city)}, ${esc(S.address.state)}<br><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(S.brand + " " + S.address.city)}" target="_blank" rel="noopener">Open in Google Maps →</a></p></div>`}

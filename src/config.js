@@ -19,7 +19,7 @@ module.exports = {
   phone: "+91 70758 59034",
   phoneE164: "+917075859034",
   whatsapp: "917075859034",
-  email: "[hello@dakshasystems.in]",          // use a mailbox you actually read
+  email: "[email you read, e.g. hello@dakshasystems.com]",   // [placeholder] values are hidden on the site until filled
   gstin: "10GPXPD6272M1ZC",
 
   address: {
@@ -32,6 +32,8 @@ module.exports = {
   },
   geo: null,                                   // e.g. { lat: 25.86, lng: 85.78 } for the map pin and LocalBusiness schema
   hours: "[Business hours, e.g. Monday – Saturday, 10 AM – 7 PM]",
+  openingHours: null,                          // for Google, once hours are known, e.g. ["Mo-Sa 10:00-19:00"]
+  payment: ["Cash", "UPI", "Bank transfer", "Online payment"],   // matches the pricing page
   areaServed: ["Samastipur", "Bihar"],          // add nearby towns you actually serve
 
   grievance: { name: "[Grievance officer name]", email: "[grievance email]" },

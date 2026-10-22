@@ -6,6 +6,7 @@ const { page, url, BASE, HOST } = require("./src/layout");
 const P = require("./src/pages");
 const L = require("./src/policies");
 const { list: SERVICES } = require("./src/services");
+const LLMS = require("./src/llms");
 
 const OUT = path.join(__dirname, "docs");
 const pages = [P.home(), P.products(), P.servicesIndex(), ...SERVICES.map(P.servicePage), P.software(), P.whatWeDo(), P.pricing(),
@@ -24,7 +25,16 @@ fs.writeFileSync(path.join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="U
 ${indexed.map((p) => `  <url><loc>${url(p.path)}</loc><lastmod>${today}</lastmod><priority>${p.path === "/" ? "1.0" : p.path.includes("policy") || p.path === "/terms/" ? "0.3" : "0.8"}</priority></url>`).join("\n")}
 </urlset>
 `);
-fs.writeFileSync(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${url("/sitemap.xml")}\n`);
+/* Every crawler is welcome, AI assistants included. llms.txt summarises the business for them. */
+fs.writeFileSync(path.join(OUT, "robots.txt"), `# ${S.brand} — search engines and AI assistants may crawl everything.
+# Summary for AI assistants: ${url("/llms.txt")}
+User-agent: *
+Allow: /
+
+Sitemap: ${url("/sitemap.xml")}
+`);
+fs.writeFileSync(path.join(OUT, "llms.txt"), LLMS.short());
+fs.writeFileSync(path.join(OUT, "llms-full.txt"), LLMS.full(pages));
 const cname = path.join(OUT, "CNAME");
 if (S.customDomain) fs.writeFileSync(cname, S.customDomain + "\n"); else fs.rmSync(cname, { force: true });
 fs.writeFileSync(path.join(OUT, ".nojekyll"), "");

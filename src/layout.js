@@ -9,6 +9,8 @@ const BASE = SITE.pathname.replace(/\/$/, "");   // "" on a custom domain, "/dak
 const HOST = (SITE.host + BASE);
 /* Content hash appended to CSS/JS links so browsers fetch the new file after each change. */
 const ver = (f) => require("crypto").createHash("sha1").update(fs.readFileSync(path.join(__dirname, "../docs/assets", f))).digest("hex").slice(0, 8);
+/* A config value counts as real once its [placeholder] has been replaced. Placeholders are never printed. */
+const real = (v) => typeof v === "string" && v.trim() !== "" && !/^\[.*\]$/.test(v.trim());
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const url = (p) => ORIGIN + BASE + p;
 /* Pages are written with root-absolute links ("/products/"); prefix them with the base path. */
@@ -42,15 +44,33 @@ const POLICIES = [
 /* Pages that aren't in the header but still need a breadcrumb name. */
 const OTHER_PAGES = [["/what-we-do/", "What we do"]];
 
+/* Products and services as an OfferCatalog, so search engines and AI agents can see what is sold. */
+function catalog() {
+  const P = require("./products");
+  return { "@type": "OfferCatalog", name: `${S.brand} products and services`, itemListElement: [
+    ...P.categories.map((c) => ({ "@type": "OfferCatalog", name: c.name, description: c.blurb, url: url(`/products/#${c.id}`),
+      itemListElement: P.items.filter((i) => i.cat === c.id).map((i) => ({ "@type": "Offer", priceCurrency: "INR",
+        itemOffered: { "@type": "Product", name: i.name, description: i.desc, image: url(`/assets/img/products/${i.img}.jpg`) } })) })),
+    { "@type": "OfferCatalog", name: "Services", itemListElement: SERVICES.map((s) => ({ "@type": "Offer",
+      itemOffered: { "@type": "Service", name: s.short, description: s.description, url: url(`/services/${s.slug}/`) } })) },
+  ] };
+}
+
 const business = () => ({
   "@type": ["ComputerStore", "ProfessionalService"],
   "@id": url("/#business"),
   name: S.brand,
   url: url("/"),
   logo: url("/assets/icon-512.png"),
-  image: url("/assets/og-image.jpg"),
+  image: url(`/assets/og-image.jpg?v=${ver("og-image.jpg")}`),
   telephone: S.phone,
-  email: S.email,
+  ...(real(S.email) ? { email: S.email } : {}),
+  ...(S.openingHours ? { openingHours: S.openingHours } : {}),
+  contactPoint: { "@type": "ContactPoint", telephone: S.phoneE164, contactType: "customer service",
+    areaServed: "IN", availableLanguage: ["en", "hi"] },
+  currenciesAccepted: "INR",
+  paymentAccepted: S.payment.join(", "),
+  hasOfferCatalog: catalog(),
   taxID: S.gstin,
   priceRange: "₹₹",
   address: { "@type": "PostalAddress", streetAddress: `${addr.street}, ${addr.locality}`, addressLocality: addr.city,
@@ -88,14 +108,14 @@ function head({ title, description, path: p, type = "website", schema = [], noin
 <meta property="og:title" content="${esc(full)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${url(p)}">
-<meta property="og:image" content="${url("/assets/og-image.jpg")}">
+<meta property="og:image" content="${url(`/assets/og-image.jpg?v=${ver("og-image.jpg")}`)}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="${esc(S.brand)} — computers, accessories, CCTV installation, repair and software">
+<meta property="og:image:alt" content="${esc(S.brand)}: computers, CCTV and accessories in ${esc(addr.city)}. WhatsApp ${esc(S.phone)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(full)}">
 <meta name="twitter:description" content="${esc(description)}">
-<meta name="twitter:image" content="${url("/assets/og-image.jpg")}">
+<meta name="twitter:image" content="${url(`/assets/og-image.jpg?v=${ver("og-image.jpg")}`)}">
 <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -152,7 +172,7 @@ const footer = () => `
         <li><a href="/software/">Daksh billing software</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><h4>Reach us</h4>
         <address>${esc(S.brand)}<br>${esc(addrLine)}<br>
-        <a href="tel:${S.phoneE164}">${esc(S.phone)}</a><br><a href="mailto:${esc(S.email)}">${esc(S.email)}</a><br>${esc(S.hours)}</address></div>
+        <a href="tel:${S.phoneE164}">${esc(S.phone)}</a>${real(S.email) ? `<br><a href="mailto:${esc(S.email)}">${esc(S.email)}</a>` : ""}${real(S.hours) ? `<br>${esc(S.hours)}` : ""}</address></div>
     </div>
     <div class="legal">
       <span>© <span id="yr">2026</span> ${esc(S.brand)}. All rights reserved.</span>
@@ -174,4 +194,4 @@ function page(meta, body) {
   return rebase(`${head(meta)}\n<body>${header(meta.path)}\n<main id="main">${body}</main>${footer()}`);
 }
 
-module.exports = { page, esc, url, waLink, crumbsHtml, MARK, WA_ICON, PHONE_ICON, NAV, POLICIES, SERVICES, ORIGIN, BASE, HOST, addrLine, S };
+module.exports = { page, real, esc, url, waLink, crumbsHtml, MARK, WA_ICON, PHONE_ICON, NAV, POLICIES, SERVICES, ORIGIN, BASE, HOST, addrLine, S };

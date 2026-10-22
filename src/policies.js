@@ -1,10 +1,13 @@
 /* Policy pages required for payment-gateway onboarding (Razorpay / Cashfree / PayU / PhonePe) and for
    Google OAuth verification of the desktop app. Have a lawyer or CA review before relying on them. */
-const { esc, crumbsHtml, addrLine, HOST, S } = require("./layout");
+const { real, esc, crumbsHtml, addrLine, HOST, S } = require("./layout");
 
 /* The only place the proprietor's legal name is printed. */
 const who = () => `<b>${esc(S.legalName)}</b> (${S.constitution === "Proprietorship" ? "sole proprietor" : esc(S.constitution.toLowerCase())}), trading as <b>${esc(S.brand)}</b> (GST trade name: ${esc(S.gstTradeName)}), GSTIN ${esc(S.gstin)}, ${esc(addrLine)}`;
 const mail = (e) => `<a href="mailto:${esc(e)}">${esc(e)}</a>`;
+/* Contact fragments that leave out the email until a real one is set in config.js. */
+const orEmail = () => real(S.email) ? `, or email ${mail(S.email)}` : "";
+const emailTail = () => real(S.email) ? ` · Email: ${mail(S.email)}` : "";
 const slug = (h) => h.toLowerCase().replace(/&amp;/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 function doc(p, h1, lede, sections) {
@@ -73,10 +76,10 @@ const privacy = () => ({
       <li>Delete data we no longer need to keep by law;</li>
       <li>Withdraw consent for marketing messages;</li>
       <li>Nominate another person to exercise these rights on your behalf.</li>
-    </ul><p>Write to ${mail(S.email)} or the grievance officer below. We may need to verify your identity before acting on a request.</p>`],
+    </ul><p>Write to ${real(S.email) ? `${mail(S.email)} or ` : ""}the grievance officer below. We may need to verify your identity before acting on a request.</p>`],
     ["Children", `<p>Our services are offered to businesses and adults. When we provide school or coaching software, the institute is responsible for collecting student and parent data lawfully, including verifiable parental consent where required; the data stays on the institute's own systems.</p>`],
     ["Grievance officer", `<p>In accordance with the IT Act, 2000 and the rules made under it, and the DPDP Act, 2023:</p>
-      <p><b>${esc(S.grievance.name)}</b><br>Grievance Officer, ${esc(S.brand)}<br>${esc(addrLine)}<br>Email: ${mail(S.grievance.email)}<br>Phone: ${esc(S.phone)}<br>${esc(S.hours)}</p>
+      <p>${real(S.grievance.name) ? `<b>${esc(S.grievance.name)}</b><br>` : ""}Grievance Officer, ${esc(S.brand)}<br>${esc(addrLine)}<br>${real(S.grievance.email) ? `Email: ${mail(S.grievance.email)}<br>` : ""}Phone: ${esc(S.phone)}${real(S.hours) ? `<br>${esc(S.hours)}` : ""}</p>
       <p>We acknowledge complaints within 48 hours and aim to resolve them within 30 days.</p>`],
     ["Changes to this policy", `<p>We may update this policy. The "last updated" date at the top shows the latest version. Significant changes will be highlighted on this page.</p>`],
   ]),
@@ -131,7 +134,7 @@ const terms = () => ({
     ["Limitation of liability", `<p>To the extent permitted by law, our total liability for any claim relating to an order is limited to the amount you paid for that order. We are not liable for indirect losses such as lost profit, lost business or lost data, except where caused by our gross negligence or wilful misconduct.</p>`],
     ["Use of this website", `<p>The content of this website is provided for general information. You may not misuse the website, attempt to break its security, or copy its content for commercial use without permission. Logos and brand marks belong to ${esc(S.brand)} or their respective owners.</p>`],
     ["Governing law", `<p>These terms are governed by the laws of India. Courts at ${esc(S.address.city)}, ${esc(S.address.state)} have exclusive jurisdiction. Before going to court, we both agree to try to resolve any dispute by talking to each other in good faith.</p>`],
-    ["Contact", `<p>${who()}<br>Phone: ${esc(S.phone)} · Email: ${mail(S.email)}</p>`],
+    ["Contact", `<p>${who()}<br>Phone: ${esc(S.phone)}${emailTail()}</p>`],
   ]),
 });
 
@@ -151,7 +154,7 @@ const refund = () => ({
       <tr><td>Websites &amp; custom software</td><td>Before work starts</td><td>Full refund of advance before work starts. After work starts, the advance covers work done; any amount above the value of completed milestones is refunded.</td></tr>
       <tr><td>Marketing services</td><td>Before the month starts</td><td>Month already started or delivered is not refundable.</td></tr>
     </table>`],
-    ["How to request a cancellation or refund", `<p>Contact us by WhatsApp or call at ${esc(S.phone)}, or email ${mail(S.email)}, with your invoice number and the reason. We will confirm within 2 working days whether the request is approved.</p>`],
+    ["How to request a cancellation or refund", `<p>Contact us by WhatsApp or call at ${esc(S.phone)}${orEmail()}, with your invoice number and the reason. We will confirm within 2 working days whether the request is approved.</p>`],
     ["How refunds are paid", `<ul>
       <li>Approved refunds are processed within <b>5–7 working days</b> of approval.</li>
       <li>Payments made online are refunded to the <b>original payment method</b> (card, UPI, net banking or wallet) through the payment gateway. Depending on your bank, it can take a further 5–10 working days to appear.</li>
@@ -160,7 +163,7 @@ const refund = () => ({
     </ul>`],
     ["Failed or duplicate payments", `<p>If money left your account but the payment failed, or you were charged twice, it is usually reversed automatically by your bank or the gateway within 5–7 working days. If it isn't, contact us with the transaction reference and we will get it refunded.</p>`],
     ["Cancellation by us", `<p>If we cannot deliver what you ordered — for example an item is out of stock — we will tell you and refund any amount paid in full.</p>`],
-    ["Contact", `<p>${who()}<br>Phone / WhatsApp: ${esc(S.phone)} · Email: ${mail(S.email)}</p>`],
+    ["Contact", `<p>${who()}<br>Phone / WhatsApp: ${esc(S.phone)}${emailTail()}</p>`],
   ]),
 });
 
@@ -184,7 +187,7 @@ const shipping = () => ({
       <li>If you haven't received your code within 2 working days, contact us at ${esc(S.phone)}.</li>
     </ul>`],
     ["Websites and custom software", `<p>Delivered online — a link to the live website or a software build — in the stages and dates written in your quote.</p>`],
-    ["Contact", `<p>${who()}<br>Questions about a delivery: ${esc(S.phone)} · ${mail(S.email)}</p>`],
+    ["Contact", `<p>${who()}<br>Questions about a delivery: ${esc(S.phone)}${real(S.email) ? ` · ${mail(S.email)}` : ""}</p>`],
   ]),
 });
 
@@ -203,7 +206,7 @@ const warranty = () => ({
     </table>`],
     ["Returns of working products", `<p>Please check every item at the counter or at delivery. Working products are not taken back after handover, and items specially ordered for you or already installed are not returnable unless defective. You can cancel any order for a full refund before it is handed over or dispatched, as set out in our <a href="/refund-policy/">Refund &amp; Cancellation Policy</a>.</p>`],
     ["How to make a claim", `<ol>
-      <li>WhatsApp or call us at ${esc(S.phone)}, or email ${mail(S.email)}, with your invoice number, a description of the problem, and a photo or short video if possible.</li>
+      <li>WhatsApp or call us at ${esc(S.phone)}${orEmail()}, with your invoice number, a description of the problem, and a photo or short video if possible.</li>
       <li>We first try to solve it over the phone (many problems are settings or cables).</li>
       <li>If the item is faulty, bring it to us or we arrange a visit. For manufacturer warranty, we send it to, or guide you to, the authorised service centre and follow up.</li>
       <li>Turnaround time for manufacturer repairs is decided by the manufacturer. We keep you updated.</li>
@@ -218,7 +221,7 @@ const warranty = () => ({
     </ul>`],
     ["Data on returned or repaired devices", `<p>Repairs and replacements may erase the data on a device. Back up your files before handing it over. We are not responsible for data on devices sent for warranty repair.</p>`],
     ["Your statutory rights", `<p>This policy does not limit any rights you have under the Consumer Protection Act, 2019 or other Indian law.</p>`],
-    ["Contact", `<p>${who()}<br>Phone / WhatsApp: ${esc(S.phone)} · Email: ${mail(S.email)}</p>`],
+    ["Contact", `<p>${who()}<br>Phone / WhatsApp: ${esc(S.phone)}${emailTail()}</p>`],
   ]),
 });
 

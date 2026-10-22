@@ -1,0 +1,1696 @@
+# Daksha Systems — full site text
+
+> Every page of https://dakshasystems.com/ as plain text, for AI assistants. The short summary is at https://dakshasystems.com/llms.txt.
+
+---
+
+Source: https://dakshasystems.com/
+
+> daksha build --for your-shop
+
+# Computers, CCTV & software for businesses that can't stop.
+
+Keyboards, mice and accessories off the shelf, CCTV cameras installed and on your phone, computers repaired, and billing software on the counter — one local team in Samastipur that picks up the phone.
+
+GST invoice on every saleCCTV installed by usYour data stays yours
+
+Keyboards & miceCCTV installationComputer salesAccessoriesRepair & AMCGST billing softwareStock & khataSchool softwareCoaching softwareWebsitesE-commerceGoogle Business ProfileKeyboards & miceCCTV installationComputer salesAccessoriesRepair & AMCGST billing softwareStock & khataSchool softwareCoaching softwareWebsitesE-commerceGoogle Business Profile
+
+Products
+
+## What's on our shelves.
+
+Pick a category, tap Enquire on anything you need, and we'll reply on WhatsApp with today's price and availability.
+
+Keyboards & miceWired, wireless and gaming keyboards and mice for the counter, office and home.5 items →
+
+CCTV & securityCameras, recorders and complete kits, installed and set up to view on your phone.4 items →
+
+Computers & monitorsDesktops, laptops and monitors configured for your work and budget.3 items →
+
+Storage & upgradesHard disks, SSDs, RAM and pen drives to make old machines fast again.3 items →
+
+Networking & Wi-FiRouters, adapters and LAN cabling for shops, offices and labs.3 items →
+
+Printers & accessoriesPrinters, headphones, speakers, cables, chargers and bags.5 items →
+
+CCTV installation
+
+## Watch your shop from your phone. Day and night.
+
+We plan where the cameras go, supply them, run the wiring, and set up live viewing on your mobile — for shops, homes, offices, schools and coaching centres.
+
+- Site visit and a written quote before any work
+
+- Indoor, outdoor and Wi-Fi cameras with night vision
+
+- Recorder and hard disk sized for the days you want to keep
+
+- Passwords handed over to you, not kept by us
+
+Services
+
+## Every key your business needs.
+
+Hardware, CCTV, software and the internet — handled by the same people, so nothing falls between vendors.
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+F4
+
+### Billing & stock software
+
+GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.
+
+Explore →
+
+F5
+
+### School & coaching software
+
+Admissions, attendance, fees and receipts for schools and coaching institutes.
+
+Explore →
+
+F6
+
+### Websites & e-commerce
+
+Business websites, product catalogues and online stores with payment setup.
+
+Explore →
+
+F7
+
+### Google & social marketing
+
+Google Business Profile, Maps, social media pages and local promotion.
+
+Explore →
+
+F8
+
+### Products & accessories
+
+Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp.
+
+Explore →
+
+Clear scope
+
+## What we do. What we don't.
+
+Printed like a bill, because that's what we build. No surprises later.
+
+WHAT WE DODAKSHA SYSTEMS · SAMASTIPUR
+
+- Sell and install desktops, laptops, printers and parts
+- Sell keyboards, mice and computer accessories
+- Supply and install CCTV cameras with mobile viewing
+- Repair computers and run Annual Maintenance Contracts
+- Build and sell our own billing, stock & khata software
+- Build school and coaching management software
+- Design websites, catalogues and online stores
+- Set up Google Business Profile and social media
+- Train your staff and support what we install
+
+TOTALONE CALL
+
+WHAT WE DON'TNO FINE PRINT
+
+- Keep your business data on our servers — it stays on your computer or your own Google Drive
+- Install pirated or cracked software
+- Lock your data in — backups and exports are yours
+- Charge monthly rent for the desktop billing software
+- Sell, rent or share your customers' data
+- Buy fake reviews or followers
+- Promise first rank on Google
+
+HIDDEN COSTS₹0
+
+Our product
+
+## Daksh billing software. Built for the counter, not the cloud.
+
+GST invoices, estimates, stock, service jobs and customer khata — on your own computer. No monthly rent. If the internet goes, billing doesn't.
+
+- Works fully offline on Windows
+
+- Automatic backups and a self-healing database
+
+- Optional copy to your own Google Drive & Sheets
+
+- Monthly GST summary by HSN for your CA
+
+Aaj ki sale₹ ••••
+
+Cash in₹ ••••
+
+Baaki₹ ••••
+
+How we work
+
+## Four steps. No jargon.
+
+Whether it's a broken laptop or a full billing setup, the process is the same: understand, quote, deliver, support.
+
+~/daksha/how-we-work
+
+- ListenYou tell us the problem or the goal — on WhatsApp, a call, or at your shop.
+
+- QuoteA clear written quote: what's included, what isn't, price and timeline.
+
+- DeliverWe install, repair, build or set up — and train the people who'll use it.
+
+- SupportA local number that answers. AMC and support plans if you want them.
+
+Why us
+
+## Small promises we can actually keep.
+
+0bytes of your business data on our servers
+
+₹0monthly rent on the desktop billing software
+
+1local team for hardware, software & web
+
+GSTinvoice on every sale and service
+
+FAQ
+
+## Questions people ask us
+
+**Where are you located?**
+We are in Samastipur, Bihar. See the contact page for the full address and directions.
+
+**Do you work only with shops?**
+No. We work with shops, offices, schools, coaching institutes and anyone who needs computers, repairs, software or a website.
+
+**Do you sell keyboards, mice and other accessories?**
+Yes. Keyboards, mice, cables, chargers, pen drives, hard disks, RAM, routers, printers, headphones, speakers and more. See the products page and tap Enquire to get the current price on WhatsApp.
+
+**Do you install CCTV cameras?**
+Yes. We visit the site, plan camera positions, supply the cameras and recorder, do the wiring and set up viewing on your phone, for shops, homes, offices and schools.
+
+**Does your billing software need internet?**
+No. It runs on your own computer and keeps working offline. An optional copy to your own Google Drive needs internet only when it syncs.
+
+**How do I pay?**
+By UPI, bank transfer, cash at the shop or online payment links. Every payment gets a GST invoice.
+
+**Do you give a GST invoice?**
+Yes. We are GST registered (GSTIN 10GPXPD6272M1ZC) and every sale or service is invoiced.
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/products/
+
+# Products & accessories
+
+Everything from a keyboard to a full CCTV kit. Tap Enquire to get today's price and availability on WhatsApp, or add several items to a list and send them together.
+
+## Keyboards & mice
+
+Wired, wireless and gaming keyboards and mice for the counter, office and home.
+
+### USB wired keyboard
+
+Full-size keyboard for billing counters, offices and computer labs.
+
+Ask for price
+
+### Wireless keyboard & mouse combo
+
+One USB receiver, no cables on the desk. Battery-powered.
+
+Ask for price
+
+### Backlit / mechanical keyboard
+
+Backlit keys for low light, mechanical switches for heavy typing and gaming.
+
+Ask for price
+
+### Wired & wireless mouse
+
+Everyday optical mice in wired USB and wireless versions.
+
+Ask for price
+
+### Gaming mouse
+
+High-precision sensor, extra buttons and adjustable DPI.
+
+Ask for price
+
+## CCTV & security
+
+Cameras, recorders and complete kits, installed and set up to view on your phone. How installation works →
+
+### CCTV kit with installation
+
+4 or 8 cameras, recorder, hard disk, cabling and mobile viewing — fitted by us.
+
+Ask for price
+
+### Outdoor bullet camera
+
+Weather-resistant HD camera with night vision for gates, shutters and parking.
+
+Ask for price
+
+### Indoor dome camera
+
+Discreet ceiling or wall camera for counters, halls and classrooms.
+
+Ask for price
+
+### Wi-Fi smart camera
+
+Plug-in camera with phone app, two-way talk and memory-card recording.
+
+Ask for price
+
+## Computers & monitors
+
+Desktops, laptops and monitors configured for your work and budget.
+
+### Desktop computer
+
+Assembled or branded desktops for billing, office, lab or study use.
+
+Ask for price
+
+### Laptop
+
+For students, offices and business owners — set up and ready to use.
+
+Ask for price
+
+### Monitor
+
+Monitors in common sizes for counters, offices and home setups.
+
+Ask for price
+
+## Storage & upgrades
+
+Hard disks, SSDs, RAM and pen drives to make old machines fast again.
+
+### Hard disk & SSD
+
+Internal and external drives. SSD upgrades fitted with data copied over.
+
+Ask for price
+
+### RAM upgrade
+
+Desktop and laptop memory, checked for compatibility and installed.
+
+Ask for price
+
+### Pen drive & memory card
+
+USB pen drives and memory cards for backups, cameras and phones.
+
+Ask for price
+
+## Networking & Wi-Fi
+
+Routers, adapters and LAN cabling for shops, offices and labs.
+
+### Wi-Fi router
+
+Home and office routers, configured with a secure password.
+
+Ask for price
+
+### USB Wi-Fi adapter
+
+Add Wi-Fi to a desktop that doesn't have it.
+
+Ask for price
+
+### LAN cabling & switches
+
+Network cables, switches and wiring for offices and computer labs.
+
+Ask for price
+
+## Printers & accessories
+
+Printers, headphones, speakers, cables, chargers and bags.
+
+### Printer
+
+Inkjet, laser and billing printers, installed with drivers.
+
+Ask for price
+
+### Headphones, headsets & webcams
+
+For online classes, video calls and music.
+
+Ask for price
+
+### Speakers
+
+Desktop and multimedia speakers for computers and laptops.
+
+Ask for price
+
+### Cables, chargers & adapters
+
+USB, HDMI, VGA and power cables, laptop chargers and converters.
+
+Ask for price
+
+### Laptop bag
+
+Padded backpacks and sleeves for everyday carry.
+
+Ask for price
+
+## Don't see what you need?
+
+UPS, inverter batteries, toner, a particular brand or model — send us the name or a photo and we'll check.
+
+Photos are for illustration; the brand and model supplied are confirmed on your quote and invoice. Prices are in INR; GST is charged as applicable and shown on the invoice. See our Warranty & Returns and Refund policies.
+
+FAQ
+
+## Buying from us
+
+**Why don't you show prices for every item?**
+Hardware prices change with distributor rates and stock. Tap Enquire and we reply on WhatsApp with today's price, availability and the brands we can supply.
+
+**Can I order several items together?**
+Yes. Tap "Add to list" on each item, then send the whole list to us on WhatsApp in one message.
+
+**Do I get a GST invoice?**
+Yes. Every sale gets a GST invoice (GSTIN 10GPXPD6272M1ZC).
+
+**What if an item is faulty?**
+Report it within 7 days of delivery. Items that are dead or defective on arrival are replaced or repaired; after that, the manufacturer's warranty applies and we help you claim it. See the Warranty & Returns policy.
+
+**Do you deliver?**
+We deliver and install in and around Samastipur. You can also collect from us.
+
+---
+
+Source: https://dakshasystems.com/services/
+
+# Everything your business runs on.
+
+Pick a key. Each service page lists exactly what's included, and the questions people ask before they call.
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+F4
+
+### Billing & stock software
+
+GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.
+
+Explore →
+
+F5
+
+### School & coaching software
+
+Admissions, attendance, fees and receipts for schools and coaching institutes.
+
+Explore →
+
+F6
+
+### Websites & e-commerce
+
+Business websites, product catalogues and online stores with payment setup.
+
+Explore →
+
+F7
+
+### Google & social marketing
+
+Google Business Profile, Maps, social media pages and local promotion.
+
+Explore →
+
+F8
+
+### Products & accessories
+
+Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp.
+
+Explore →
+
+Scope
+
+## Before you ask — here's what's in and out.
+
+WHAT WE DODAKSHA SYSTEMS · SAMASTIPUR
+
+- Sell and install desktops, laptops, printers and parts
+- Sell keyboards, mice and computer accessories
+- Supply and install CCTV cameras with mobile viewing
+- Repair computers and run Annual Maintenance Contracts
+- Build and sell our own billing, stock & khata software
+- Build school and coaching management software
+- Design websites, catalogues and online stores
+- Set up Google Business Profile and social media
+- Train your staff and support what we install
+
+TOTALONE CALL
+
+WHAT WE DON'TNO FINE PRINT
+
+- Keep your business data on our servers — it stays on your computer or your own Google Drive
+- Install pirated or cracked software
+- Lock your data in — backups and exports are yours
+- Charge monthly rent for the desktop billing software
+- Sell, rent or share your customers' data
+- Buy fake reviews or followers
+- Promise first rank on Google
+
+HIDDEN COSTS₹0
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/computer-sales/
+
+# Computers that fit the job, not the showroom.
+
+We help shops, offices, schools and coaching centres buy the right desktop, laptop or printer — then install, set up and stand behind it.
+
+What's included
+
+## Computer sales & upgrades
+
+- Advice on the right configuration for billing, office, lab or study use
+- New desktops, laptops, printers, UPS, networking and accessories — keyboards, mice and more
+- Upgrades that make old machines fast again: SSD, RAM, power supply
+- Genuine Windows and software installation, drivers and printer setup
+- Data transfer from your old computer to the new one
+- Brand warranty handled through the manufacturer; we help you claim it
+
+FAQ
+
+## Good questions
+
+**Do you sell refurbished computers?**
+Ask us. If we offer a refurbished unit, it is labelled as refurbished on the quote and the invoice, with its own warranty terms written down.
+
+**Will you set up my billing printer and barcode scanner?**
+Yes. Printer, thermal printer and barcode scanner setup is part of the installation when you buy from us, and available as a service otherwise.
+
+**Do you deliver outside Samastipur?**
+We deliver and install in and around Samastipur. For other places, contact us first and we will tell you whether we can.
+
+Products
+
+## Ask for a price on WhatsApp
+
+Tap Enquire and we'll reply with today's price and availability.
+
+### Desktop computer
+
+Assembled or branded desktops for billing, office, lab or study use.
+
+Ask for price
+
+### Laptop
+
+For students, offices and business owners — set up and ready to use.
+
+Ask for price
+
+### Monitor
+
+Monitors in common sizes for counters, offices and home setups.
+
+Ask for price
+
+### Hard disk & SSD
+
+Internal and external drives. SSD upgrades fitted with data copied over.
+
+Ask for price
+
+Other services
+
+## Often needed together
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+F4
+
+### Billing & stock software
+
+GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/repair-amc/
+
+# Repair today. Fewer breakdowns tomorrow.
+
+Diagnosis, repair and preventive maintenance for desktops, laptops and printers — at your counter, office or computer lab.
+
+What's included
+
+## Repair & AMC
+
+- Diagnosis with a written estimate before any paid work starts
+- Slow computer, won't start, blue screen, overheating, noisy fan
+- Virus and malware removal, Windows reinstall, driver fixes
+- Hard disk / SSD replacement and data copy where the drive is readable
+- Printer, network and Wi-Fi problems
+- AMC: scheduled check-ups, priority visits and a service record per machine
+
+FAQ
+
+## Good questions
+
+**Will you tell me the cost before repairing?**
+Yes. We diagnose first and give you an estimate. Paid work starts only after you approve it.
+
+**Can you recover data from a dead hard disk?**
+If the drive still reads, we copy your data before working on it. Lab-grade recovery from physically damaged drives is not something we do in-house; we will tell you honestly when a drive needs a specialist.
+
+**What does an AMC cover?**
+Routine maintenance visits, priority response and labour for covered machines. Spare parts are billed separately unless the contract says otherwise. Exact scope is written in your AMC agreement.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+F4
+
+### Billing & stock software
+
+GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/cctv-installation/
+
+# See your shop from your phone — day and night.
+
+We plan, supply and install CCTV for shops, homes, offices, schools and coaching centres, then set it up so you can watch live and recorded video on your mobile.
+
+What's included
+
+## CCTV installation
+
+- Site visit to plan camera positions, cable routes and recording needs
+- Indoor dome, outdoor bullet and Wi-Fi cameras with night vision
+- DVR / NVR recorder with a hard disk sized for how long you want to keep footage
+- Neat wiring, power supply and mounting
+- Live and recorded viewing on your phone, set up and explained
+- Passwords handed over to you; repairs, shifting and AMC on request
+
+FAQ
+
+## Good questions
+
+**How many days of recording will I get?**
+It depends on the number of cameras, their resolution and the hard disk size. Tell us how many days you want to keep, and the quote will size the hard disk for it.
+
+**Can I watch the cameras on my mobile?**
+Yes. We set up the viewing app on your phone. Watching from outside your premises needs a working internet connection at the site.
+
+**Will it record during a power cut?**
+Only if the recorder and cameras have backup power. We recommend connecting them to a UPS or inverter, and can supply one.
+
+**Do you keep access to my cameras?**
+No. We set the passwords during installation and hand them over to you. Change them whenever you like; we only need access if you ask us for support.
+
+**What about privacy?**
+Cameras should cover your own premises. We won't point cameras into a neighbour's property or a private area such as a washroom.
+
+Products
+
+## Ask for a price on WhatsApp
+
+Tap Enquire and we'll reply with today's price and availability.
+
+### CCTV kit with installation
+
+4 or 8 cameras, recorder, hard disk, cabling and mobile viewing — fitted by us.
+
+Ask for price
+
+### Outdoor bullet camera
+
+Weather-resistant HD camera with night vision for gates, shutters and parking.
+
+Ask for price
+
+### Indoor dome camera
+
+Discreet ceiling or wall camera for counters, halls and classrooms.
+
+Ask for price
+
+### Wi-Fi smart camera
+
+Plug-in camera with phone app, two-way talk and memory-card recording.
+
+Ask for price
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F4
+
+### Billing & stock software
+
+GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/billing-software/
+
+# Billing software that works even when the internet doesn't.
+
+GST invoices, estimates, stock, customer khata and service jobs — on your own computer, with backups that look after themselves.
+
+What's included
+
+## Billing & stock software
+
+- GST tax invoices and estimates with separate number series that reset every 1 April
+- Customer khata: part payments, baaki by customer and by age
+- Stock and purchases, service job cards, and projects
+- Monthly GST summary by HSN for your CA
+- Every bill saved as a PDF; print on A4 or share
+- Automatic backups, a damage-proof journal, and optional copy to your own Google Drive
+
+FAQ
+
+## Good questions
+
+**Does it need internet?**
+No. The software runs fully on your computer. Internet is only needed if you switch on the optional Google Drive / Sheets copy.
+
+**Is there a monthly fee?**
+The desktop licence is a one-time purchase for the computer it is activated on. Support, customisation and extra computers are quoted separately.
+
+**Can I try it first?**
+Yes. It installs with a short free trial. After that you get an activation code from us to continue.
+
+**Can it be customised for my trade?**
+Yes. The same base has been built for computer shops and jewellers. New fields, reports or print layouts are quoted as custom work.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/school-coaching-software/
+
+# Fees, attendance and admissions — off paper, in one place.
+
+Software for schools and coaching institutes that the office staff can actually use, set up and supported by people you can call.
+
+What's included
+
+## School & coaching software
+
+- Student admissions and batch / class records
+- Attendance tracking
+- Fee collection, receipts, dues and reminders lists
+- Reports for the owner or principal
+- Set-up on your office computers and staff training
+- Computer-lab setup and maintenance on request
+
+FAQ
+
+## Good questions
+
+**Is it the same for a school and a coaching centre?**
+The core is the same; batches, fee plans and reports are set up to match how your institute works.
+
+**Who owns the student data?**
+You do. The data stays on your institute's computers or in your own cloud account. We do not sell or reuse it.
+
+**Do you train our staff?**
+Yes. Training for office staff is part of the setup.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/websites-ecommerce/
+
+# A website that brings customers, not just a link in your bio.
+
+Business websites, product catalogues and online stores — fast, mobile-first, search-friendly, and yours to keep.
+
+What's included
+
+## Websites & e-commerce
+
+- Business website with your services, photos, map and WhatsApp button
+- Product catalogue you can share on WhatsApp
+- E-commerce store with cart and payment gateway integration
+- On-page SEO: titles, descriptions, sitemap, Google Search Console
+- Domain, hosting and business email setup in your name
+- Privacy, terms and refund pages needed for payment gateway approval
+
+FAQ
+
+## Good questions
+
+**Who owns the domain and website?**
+You do. The domain and hosting are registered in your name, and you get the login details.
+
+**Can you connect Razorpay or another gateway?**
+Yes. We prepare the pages and settings gateways ask for and integrate the gateway once your account is approved. Approval itself is decided by the gateway.
+
+**How long does a website take?**
+It depends on the number of pages and how quickly content and photos are ready. We give you a timeline with the quote.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/services/digital-marketing/
+
+# Get found by people already looking for you.
+
+Local marketing that starts where your customers search: Google Maps, Google Search, WhatsApp and social media.
+
+What's included
+
+## Google & social marketing
+
+- Google Business Profile setup or clean-up, categories, photos and posts
+- A simple, honest plan for collecting customer reviews
+- Facebook and Instagram business pages
+- WhatsApp Business catalogue and quick replies
+- Posters and creatives for festivals and offers
+- Monthly check of what's working
+
+FAQ
+
+## Good questions
+
+**Can you guarantee first position on Google?**
+No one honestly can. We do the work that improves local visibility and show you what changed.
+
+**Do you buy fake reviews or followers?**
+No. Fake reviews break Google's rules and can get a profile suspended.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/software/
+
+# Daksh billing software
+
+GST billing, stock, service jobs and customer khata for your counter. Runs on your computer. Keeps working when the internet doesn't.
+
+On the counter
+
+## Everything a shop does in a day.
+
+- New bill — Tax Invoice with GST, or Estimate without. Part payment at billing; the balance goes to the customer's khata.
+
+- Receive payment — against old bills, oldest-first or chosen by hand, with a printed receipt.
+
+- Customers & khata — every bill and payment in order with running baaki.
+
+- Stock & purchases — what came in, what went out, what's low.
+
+- Service jobs & projects — job cards for repairs and longer projects.
+
+- Reports — monthly GST by HSN for your CA, baaki by age, sales by period.
+
+Aaj ka hisab₹ ••••
+Cash in₹ ••••
+Udhaar₹ ••••
+
+Data safety
+
+## Built so a bad day doesn't lose a year of bills.
+
+### Atomic saves
+
+Every save is written to a temporary file and swapped in, so a power cut can't leave a half-written database.
+
+### Automatic backups
+
+On close, daily, and shortly after each bill or payment — to the computer and to a pen drive or second disk you choose.
+
+### Self-healing open
+
+If the main file is ever damaged, the app keeps it aside and opens the newest healthy backup on its own.
+
+### Journal rebuild
+
+Every bill and payment is also written to a journal the database can be rebuilt from.
+
+### Your own Google Drive
+
+Optionally mirror data to a Drive folder and Sheet in your Google account. We only ask for access to files the app creates.
+
+### Never deleted
+
+Bills are cancelled with a reason, never erased — the audit trail your CA expects.
+
+FAQ
+
+## Before you install
+
+**Which computers does it run on?**
+Windows 10 and 11 (64-bit). A macOS build is available on request.
+
+**What happens when the trial ends?**
+The app shows an install code. Send it to us and we send back an activation code. Your bills and customers stay exactly where they are.
+
+**What if my computer crashes?**
+The app keeps dated backups, can copy them to a pen drive or second disk, and keeps a journal it can rebuild the database from. If the main file is damaged it opens the newest healthy backup by itself.
+
+**Is my data sent to Daksha Systems?**
+No. Your bills, customers and stock are stored on your computer. If you switch on the Google option, a copy goes to your own Google Drive — not to us.
+
+**Can I move to a new computer?**
+Yes. Restore a backup on the new computer. The licence is tied to a computer, so contact us to move it.
+
+## Want a demo on your own counter? We'll install the trial for you.
+
+---
+
+Source: https://dakshasystems.com/what-we-do/
+
+# What we do. What we don't.
+
+A short, honest scope — so you know before you call whether we're the right people for the job.
+
+WHAT WE DODAKSHA SYSTEMS · SAMASTIPUR
+
+- Sell and install desktops, laptops, printers and parts
+- Sell keyboards, mice and computer accessories
+- Supply and install CCTV cameras with mobile viewing
+- Repair computers and run Annual Maintenance Contracts
+- Build and sell our own billing, stock & khata software
+- Build school and coaching management software
+- Design websites, catalogues and online stores
+- Set up Google Business Profile and social media
+- Train your staff and support what we install
+
+TOTALONE CALL
+
+WHAT WE DON'TNO FINE PRINT
+
+- Keep your business data on our servers — it stays on your computer or your own Google Drive
+- Install pirated or cracked software
+- Lock your data in — backups and exports are yours
+- Charge monthly rent for the desktop billing software
+- Sell, rent or share your customers' data
+- Buy fake reviews or followers
+- Promise first rank on Google
+
+HIDDEN COSTS₹0
+
+## Who we work with
+
+Retail shops and showrooms, offices and professionals, schools and coaching institutes, and individuals who need a computer fixed or set up — mainly in and around Samastipur, Bihar.
+
+## How our products and services are delivered
+
+What you buy | How you receive it
+
+Computers, laptops, printers, parts | Collected from us or delivered and installed at your premises. See Shipping & Delivery.
+
+Keyboards, mice and other accessories | Collected from our counter, or delivered with your order. See Shipping & Delivery.
+
+CCTV cameras and installation | Installed at your premises after a site visit and your approval of the written quote.
+
+Repair, installation, AMC visits | At our service desk or on-site at your premises.
+
+Billing / school software licence | Installed on your computer, or a download link plus activation code sent by WhatsApp or email.
+
+Websites, custom software, marketing | Delivered online in stages as agreed in the written quote.
+
+## Things outside our scope
+
+- Mobile phone, TV and home-appliance repair.
+
+- Chip-level data recovery from physically damaged drives (we'll refer you to a specialist).
+
+- Bypassing passwords, licences or security on devices or software you don't own.
+
+- Financial, tax or legal advice — our software helps you keep records; your CA advises you.
+
+Not sure if your job fits? Send us a WhatsApp message — if it isn't something we do well, we'll say so.
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/pricing/
+
+# Pricing
+
+Clear prices for standard work. Custom jobs get a written quote before anything starts — and every payment gets a GST invoice.
+
+## Software
+
+Daksh billing software — licence (one shop, one computer)one-timeQuote on request
+Additional computer licenceone-timeQuote on request
+School / coaching management softwareone-time / per yearQuote on request
+Custom software or new moduleper projectQuote on request
+
+## Websites & marketing
+
+Business website (up to 5 pages)one-timeQuote on request
+E-commerce / catalogue websiteone-timeQuote on request
+Website care (hosting help, updates)per yearQuote on request
+Google Business Profile & social media setupone-timeQuote on request
+
+## CCTV
+
+Site visit and CCTV planper visitQuote on request
+4-camera kit with recorder, hard disk and installationone-timeQuote on request
+8-camera kit with recorder, hard disk and installationone-timeQuote on request
+Single camera installation / shiftingper cameraQuote on request
+CCTV Annual Maintenance Contractper site / yearQuote on request
+
+## Accessories
+
+Keyboards, mice, cables, pen drives and other accessoriesper itemSee products
+
+## Computers & service
+
+Diagnosis visit (adjusted against repair)per visitQuote on request
+Windows / software installationper computerQuote on request
+Annual Maintenance Contract (AMC)per computer / yearQuote on request
+New desktops, laptops, printers, partsas per quoteQuote on request
+
+## How payment works
+
+- All prices are in Indian Rupees (INR). GST is charged as applicable and shown separately on the invoice.
+
+- We accept UPI, bank transfer, cash at our premises, and online payment through our payment gateway (cards, UPI, net banking, wallets).
+
+- Larger projects are billed in milestones written in the quote.
+
+- Refunds and cancellations follow our Refund & Cancellation Policy.
+
+## Need a quote for something specific? Send us the details.
+
+---
+
+Source: https://dakshasystems.com/about/
+
+# A local tech partner, not a call centre.
+
+Daksha Systems sells computers and accessories, installs CCTV, services computers and builds software for the businesses around us in Samastipur, Bihar.
+
+## Why we exist
+
+Most small businesses deal with one person for the computer, another for the billing software, a third for the website — and nobody when something breaks. We put all of it under one roof, with one number to call.
+
+## What we believe
+
+- Your data is yours. Our software keeps it on your computer, or in your own Google account if you choose.
+
+- Offline first. Billing shouldn't stop because the internet did.
+
+- Say it in writing. Quotes list what's included and what isn't.
+
+- Genuine only. Licensed software, honest marketing, no shortcuts.
+
+### Business details
+
+Business | Daksha Systems
+Type | Proprietorship, GST registered
+GSTIN | 10GPXPD6272M1ZC
+Address | Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+Phone | +91 70758 59034
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/contact/
+
+# Talk to a person.
+
+WhatsApp is fastest. Calls are answered during business hours. You're welcome to visit.
+
+### WhatsApp
+
++91 70758 59034
+Send photos of the problem or details of what you need.
+
+### Call
+
++91 70758 59034
+Calls are answered during business hours.
+
+## Visit us
+
+Daksha Systems
+Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+
+GSTIN: 10GPXPD6272M1ZC
+
+## Complaints & grievances
+
+If something went wrong, call or WhatsApp us at +91 70758 59034 and ask for our grievance officer (details in our Privacy Policy). We acknowledge within 48 hours and aim to resolve within 30 days.
+
+Samastipur, Bihar
+Open in Google Maps →
+
+---
+
+Source: https://dakshasystems.com/privacy-policy/
+
+# Privacy Policy
+
+What we collect, why, where it is stored, who it is shared with, and the rights you have over it.
+
+On this pageWho we areInformation we collectPaymentsDaksh Systems desktop softwareHow we use informationSharingCookies and analyticsStorage, security and retentionYour rightsChildrenGrievance officerChanges to this policy
+Last updated: 19 October 2026
+
+## Who we are
+
+This policy is published by Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India ("Daksha Systems", "we", "us"). It covers this website (dakshasystems.com), the services we provide in person and online, payments made to us, and the Daksh Systems desktop software we publish.
+
+We follow the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and the Digital Personal Data Protection Act, 2023 to the extent in force. For the purposes of these laws, Daksha Systems is the Data Fiduciary for the personal data described here.
+
+## Information we collect
+
+Where | What | Why
+
+When you contact us (WhatsApp, phone, email, visit) | Name, phone number, email, business name, address, details of your requirement, photos you send | To reply, quote, and deliver the service
+
+When you buy from us | Name, billing and delivery address, GSTIN (if you give one), items bought, amounts paid | To invoice you, deliver, provide warranty and support, and meet GST and accounting laws
+
+When you pay online | Payment status, transaction reference, amount, and the name/email/phone you enter at checkout | To confirm and reconcile your payment
+
+When we repair or set up a device | We may see files on the device while working on it | Only to carry out the job you asked for
+
+When we install CCTV | Site address, camera positions, and the recorder / app login you choose | To install and support the system. We hand the passwords to you and do not keep remote access or view your footage unless you ask us to for support
+
+When you activate our software | The install code shown by the app and your name / shop name | To issue and track your licence
+
+When you browse this website | Standard request data handled by our host (IP address, browser type, pages requested) | To serve and secure the website
+
+We never ask for or store your card numbers, CVV, UPI PIN, net-banking passwords or OTPs. Those are entered only on the payment gateway's secure page.
+
+## Payments
+
+Online payments are processed by a licensed third-party payment gateway (for example Razorpay, Cashfree, PayU or PhonePe, as shown at checkout). Card, UPI and bank details are collected and processed by the gateway under its own privacy policy and PCI-DSS obligations. We receive only the information needed to confirm your payment, such as the transaction ID, amount, status and the contact details you entered.
+
+## Daksh Systems desktop software
+
+The Daksh billing software is local-first. Your bills, customers, stock, payments and settings are stored in a database on your own computer (or pen drive in the portable edition), and in backup folders you choose. This data is not sent to Daksha Systems.
+
+The licence check works offline. To activate, the app shows an install code; you send it to us and we send back an activation code. We keep a record of install codes and the licences issued.
+
+### Optional Google Drive & Sheets copy
+
+If you choose to connect a Google account inside the app, the app asks Google for the https://www.googleapis.com/auth/drive.file permission only. This lets the app create and update only the files and folder it creates in your Google Drive (a backup folder and a spreadsheet of your shop data). It cannot see, read or change any other file in your Drive.
+
+- The Google sign-in token is stored on your computer, encrypted with your operating system's secure storage where available. It is never sent to Daksha Systems.
+
+- Data synced goes directly from your computer to your Google account. Daksha Systems has no access to it.
+
+- You can disconnect at any time from the app's settings, or revoke access at myaccount.google.com/permissions.
+
+Google API Services disclosure. Daksh Systems' use and transfer of information received from Google APIs to any other app will adhere to the Google API Services User Data Policy, including the Limited Use requirements. Google user data is used only to provide the backup and spreadsheet features you switch on; it is not used for advertising, not sold, not transferred to others, and not read by humans except with your explicit permission for support, for security purposes, or where required by law.
+
+## How we use information
+
+- To respond to enquiries, prepare quotes and provide the products and services you order.
+
+- To issue invoices and keep the accounting and tax records Indian law requires.
+
+- To provide warranty, AMC, licence and support services.
+
+- To send you service messages (job status, delivery, payment receipts, licence codes).
+
+- To send occasional offers, only if you have agreed; you can opt out at any time by replying "STOP" or writing to us.
+
+We do not sell, rent or trade your personal data.
+
+## Sharing
+
+We share personal data only as needed:
+
+- Payment gateways and banks — to process payments and refunds.
+
+- Manufacturers and authorised service centres — to register or claim warranty on hardware you bought.
+
+- Courier or delivery partners — name, phone and address for delivery, when used.
+
+- Service providers — hosting, email and messaging tools we use to run our business, under confidentiality.
+
+- Government and law enforcement — when required by law, for example GST filings or a lawful order.
+
+## Cookies and analytics
+
+This website does not use advertising cookies or tracking pixels, and does not run analytics scripts. It loads fonts from Google Fonts, which receives your IP address and browser details when fonts are fetched. If we add analytics in future, we will update this policy first.
+
+## Storage, security and retention
+
+- We keep customer and invoice records for as long as tax and accounting laws require (generally at least 8 years under GST and income-tax rules), and other enquiry data for as long as needed to serve you.
+
+- Devices left for repair are kept securely. We do not copy your personal files except when you ask us to (for example, data transfer or backup before repair).
+
+- We use reasonable security practices: access limited to staff who need it, password-protected systems, and encrypted connections (HTTPS) for this website.
+
+- No method of storage or transmission is completely secure. If a breach affects your personal data, we will inform you and the authorities as the law requires.
+
+## Your rights
+
+Subject to applicable law, you can ask us to:
+
+- Tell you what personal data we hold about you and how it is used;
+
+- Correct or update inaccurate data;
+
+- Delete data we no longer need to keep by law;
+
+- Withdraw consent for marketing messages;
+
+- Nominate another person to exercise these rights on your behalf.
+
+Write to the grievance officer below. We may need to verify your identity before acting on a request.
+
+## Children
+
+Our services are offered to businesses and adults. When we provide school or coaching software, the institute is responsible for collecting student and parent data lawfully, including verifiable parental consent where required; the data stays on the institute's own systems.
+
+## Grievance officer
+
+In accordance with the IT Act, 2000 and the rules made under it, and the DPDP Act, 2023:
+
+Grievance Officer, Daksha Systems
+Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+Phone: +91 70758 59034
+
+We acknowledge complaints within 48 hours and aim to resolve them within 30 days.
+
+## Changes to this policy
+
+We may update this policy. The "last updated" date at the top shows the latest version. Significant changes will be highlighted on this page.
+
+---
+
+Source: https://dakshasystems.com/terms/
+
+# Terms & Conditions
+
+The rules that apply when you use this website or buy anything from us.
+
+On this pageAbout these termsWhat we offerQuotes and ordersPrices and paymentHardware warrantyCCTV installationRepair and serviceSoftware licencesWebsites and custom workLimitation of liabilityUse of this websiteGoverning lawContact
+Last updated: 19 October 2026
+
+## About these terms
+
+These terms are an agreement between you and Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India. By using this website, placing an order, or paying us, you agree to these terms together with our Privacy Policy, Refund & Cancellation Policy, Shipping & Delivery Policy and Warranty & Returns Policy.
+
+## What we offer
+
+We sell computers, keyboards, mice and other accessories, peripherals and parts; supply and install CCTV systems; provide repair, installation and Annual Maintenance Contract (AMC) services; license our own billing, stock, school and coaching software; and build websites, custom software and digital-marketing setups. See What we do for the full scope.
+
+## Quotes and orders
+
+- Every order beyond standard listed items is based on a written quote (WhatsApp, email or printed). The quote sets out what is included, the price, taxes, and the expected timeline.
+
+- Anything not written in the quote is not included. Extra work is quoted separately before it starts.
+
+- Hardware prices depend on distributor rates and availability, and are valid for the period stated on the quote.
+
+- Product photos on this website are for illustration. The brand, model and specification you receive are the ones written on your quote and invoice.
+
+## Prices and payment
+
+- All prices are in Indian Rupees. GST is charged as applicable and shown on the invoice.
+
+- Payment can be made by UPI, bank transfer, cash at our premises, or online through our payment gateway.
+
+- For projects (software, websites), an advance is payable to start, with the balance on milestones written in the quote.
+
+- Ownership of hardware passes to you on full payment. Software licences and website handover are activated on full payment.
+
+## Hardware warranty
+
+New hardware carries the manufacturer's warranty, honoured by the manufacturer or its authorised service centre. We help you raise and follow up warranty claims. Warranty does not cover physical damage, liquid damage, power surges, unauthorised repair or software problems. Full details are in our Warranty & Returns Policy.
+
+## CCTV installation
+
+- We visit the site and give a written quote listing cameras, recorder, hard disk, cable length and labour. Extra cable, cameras or civil work (drilling through thick walls, conduits, ladders beyond normal height) are quoted before they are done.
+
+- You are responsible for the lawful use of the system: cameras should cover your own premises, and must not record private areas or a neighbour's property. Display a notice that CCTV is in use where the law or your business requires it.
+
+- Remote viewing on a phone needs a working internet connection at the site, which you arrange. How many days of footage are kept depends on the hard disk and settings written on the quote.
+
+- Recording during power cuts needs backup power (UPS or inverter) for the recorder and cameras.
+
+- We set the system passwords during installation and hand them over to you. We do not keep remote access or watch your footage. Please change the passwords if you wish and keep them safe.
+
+- Installation work carries a service warranty for the period written on the invoice. Cameras, recorders and hard disks carry their manufacturer's warranty.
+
+## Repair and service
+
+- We diagnose before repairing and do paid work only after you approve the estimate.
+
+- Back up your data. We take reasonable care, but you are responsible for keeping a backup of your files before handing over a device. We are not liable for data loss on a device that was already failing.
+
+- Repairs we carry out carry a service warranty for the period written on the job card or invoice. Replaced parts carry their own supplier warranty.
+
+- Devices not collected within 60 days of our notice that the job is ready may be disposed of to recover costs, after a final reminder.
+
+## Software licences
+
+- Daksh Systems software is licensed, not sold. A licence lets you use the software on the computer it is activated on, for your own business.
+
+- You may not copy, resell, reverse-engineer, or share activation codes.
+
+- The free trial is for evaluation. After it ends, the software locks until activated; your data is not deleted.
+
+- Your data remains your property. You are responsible for keeping backups and for the accuracy of invoices and tax filings you make with the software; it is a record-keeping tool, not tax or legal advice.
+
+- Updates and support are provided as stated in your quote or support plan.
+
+## Websites and custom work
+
+- You provide content (text, photos, logos) and confirm you have the right to use it.
+
+- Domains and hosting are registered in your name wherever possible. On full payment, you own the delivered website content and design built specifically for you; third-party themes, plugins and libraries remain under their own licences.
+
+- Payment-gateway, Google and social-media approvals are decided by those platforms; we do not guarantee approval or search rankings.
+
+## Limitation of liability
+
+To the extent permitted by law, our total liability for any claim relating to an order is limited to the amount you paid for that order. We are not liable for indirect losses such as lost profit, lost business or lost data, except where caused by our gross negligence or wilful misconduct.
+
+## Use of this website
+
+The content of this website is provided for general information. You may not misuse the website, attempt to break its security, or copy its content for commercial use without permission. Logos and brand marks belong to Daksha Systems or their respective owners.
+
+## Governing law
+
+These terms are governed by the laws of India. Courts at Samastipur, Bihar have exclusive jurisdiction. Before going to court, we both agree to try to resolve any dispute by talking to each other in good faith.
+
+## Contact
+
+Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+Phone: +91 70758 59034
+
+---
+
+Source: https://dakshasystems.com/refund-policy/
+
+# Refund & Cancellation Policy
+
+When you can cancel, what can be refunded, and how long a refund takes.
+
+On this pageSummaryHow to request a cancellation or refundHow refunds are paidFailed or duplicate paymentsCancellation by usContact
+Last updated: 19 October 2026
+
+## Summary
+
+What you bought | Cancel | Refund
+
+Hardware (computers, printers, parts) | Before dispatch / handover | Full refund if cancelled before dispatch. After delivery: replacement or repair for items that are dead or defective on arrival (reported within 7 days, in original packaging). Otherwise, warranty claims go through the manufacturer.
+
+Accessories (keyboards, mice, cables, chargers, pen drives, headphones, etc.) | Before handover | Full refund if cancelled before handover. After handover: replacement for items that are dead or defective on arrival (reported within 7 days, in original packaging). Otherwise, warranty claims go through the manufacturer — see the Warranty & Returns Policy.
+
+CCTV equipment & installation | Before installation starts | Full refund of any advance if installation has not started. After it starts, cable and labour already used are charged. Installed cameras and recorders are not returnable; faults are handled under warranty. Items specially ordered for you are not refundable.
+
+Repair & installation | Any time before work starts | Full refund of any advance if work has not started. Diagnosis charges and work already done are not refundable. Parts specially ordered for you are not refundable.
+
+AMC | Within 7 days if no visit has been made | Full refund within 7 days if no service visit was used. After that, no refund for the remaining period.
+
+Software licence | Use the free trial first | Because a trial is provided, licence fees are non-refundable once an activation code is issued — except if the software cannot run on a supported computer and we cannot fix it within 7 days, in which case we refund in full.
+
+Websites & custom software | Before work starts | Full refund of advance before work starts. After work starts, the advance covers work done; any amount above the value of completed milestones is refunded.
+
+Marketing services | Before the month starts | Month already started or delivered is not refundable.
+
+## How to request a cancellation or refund
+
+Contact us by WhatsApp or call at +91 70758 59034, with your invoice number and the reason. We will confirm within 2 working days whether the request is approved.
+
+## How refunds are paid
+
+- Approved refunds are processed within 5–7 working days of approval.
+
+- Payments made online are refunded to the original payment method (card, UPI, net banking or wallet) through the payment gateway. Depending on your bank, it can take a further 5–10 working days to appear.
+
+- Payments made by cash or bank transfer are refunded by bank transfer or UPI to an account in the payer's name.
+
+- Where GST was charged, a credit note is issued.
+
+## Failed or duplicate payments
+
+If money left your account but the payment failed, or you were charged twice, it is usually reversed automatically by your bank or the gateway within 5–7 working days. If it isn't, contact us with the transaction reference and we will get it refunded.
+
+## Cancellation by us
+
+If we cannot deliver what you ordered — for example an item is out of stock — we will tell you and refund any amount paid in full.
+
+## Contact
+
+Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+Phone / WhatsApp: +91 70758 59034
+
+---
+
+Source: https://dakshasystems.com/shipping-policy/
+
+# Shipping & Delivery Policy
+
+How and when you receive what you buy from us.
+
+On this pageHardwareOn-site serviceSoftware licences (digital delivery)Websites and custom softwareContact
+Last updated: 19 October 2026
+
+## Hardware
+
+- We deliver and install computers, printers, accessories and CCTV systems at your premises in and around Samastipur, Bihar. You can also collect from us.
+
+- In-stock items are usually delivered within 1–3 working days of payment. Items ordered from distributors usually take 3–10 working days; the expected date is given on your quote.
+
+- Delivery charges, if any, are written on the quote and the invoice.
+
+- We do not currently ship hardware by courier outside our service area. If that changes for an order, the courier, charges and timeline will be agreed in writing first.
+
+- Please check the item at handover and report damage in transit immediately.
+
+## On-site service
+
+Repair, installation and AMC visits are scheduled with you by phone or WhatsApp, usually within 1–2 working days of the request.
+
+CCTV installation is scheduled after the site visit and your approval of the quote. The number of days the work takes depends on the number of cameras and the wiring, and is written on the quote.
+
+## Software licences (digital delivery)
+
+- No physical product is shipped. We install the software on your computer, or send a download link.
+
+- After payment, the activation code is sent by WhatsApp or email, usually within 24 hours (business days).
+
+- If you haven't received your code within 2 working days, contact us at +91 70758 59034.
+
+## Websites and custom software
+
+Delivered online — a link to the live website or a software build — in the stages and dates written in your quote.
+
+## Contact
+
+Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+Questions about a delivery: +91 70758 59034
+
+---
+
+Source: https://dakshasystems.com/warranty-policy/
+
+# Warranty & Returns Policy
+
+What happens if something you bought from us stops working, and how to claim.
+
+On this pageSummaryReturns of working productsHow to make a claimWhat warranty does not coverData on returned or repaired devicesYour statutory rightsContact
+Last updated: 19 October 2026
+
+## Summary
+
+What you bought | Warranty
+
+Computers, laptops, monitors, printers, parts and accessories | The manufacturer's warranty, for the period stated by the manufacturer on the product, box or warranty card. We help you claim it.
+
+Dead or defective on arrival | Report within 7 days of delivery with the original box and accessories. We replace or repair it, or refund it if a replacement isn't available.
+
+CCTV installation work | Our workmanship (wiring, mounting, configuration) is covered for the period written on your invoice.
+
+Repairs we carry out | Service warranty for the period written on the job card or invoice.
+
+Software licences | See Terms & Conditions and Refund Policy.
+
+## Returns of working products
+
+Please check every item at the counter or at delivery. Working products are not taken back after handover, and items specially ordered for you or already installed are not returnable unless defective. You can cancel any order for a full refund before it is handed over or dispatched, as set out in our Refund & Cancellation Policy.
+
+## How to make a claim
+
+- WhatsApp or call us at +91 70758 59034, with your invoice number, a description of the problem, and a photo or short video if possible.
+
+- We first try to solve it over the phone (many problems are settings or cables).
+
+- If the item is faulty, bring it to us or we arrange a visit. For manufacturer warranty, we send it to, or guide you to, the authorised service centre and follow up.
+
+- Turnaround time for manufacturer repairs is decided by the manufacturer. We keep you updated.
+
+## What warranty does not cover
+
+- Physical damage, cracks, burns, bent pins or liquid damage.
+
+- Damage from power surges, lightning, voltage fluctuation or faulty wiring at the site — use a UPS or stabiliser and proper earthing.
+
+- Products opened, repaired or modified by someone other than us or the authorised service centre, or with tampered serial-number stickers.
+
+- Consumables and normal wear: ink, toner, cartridges, batteries, cables that have been cut or crushed, worn keyboard keys.
+
+- Software problems, viruses, forgotten passwords, and data loss. Please back up your data before handing over any device.
+
+- For CCTV: cameras moved or rewired by others, damage from weather beyond the camera's rating, rodents chewing cables, and internet or mobile-network problems.
+
+## Data on returned or repaired devices
+
+Repairs and replacements may erase the data on a device. Back up your files before handing it over. We are not responsible for data on devices sent for warranty repair.
+
+## Your statutory rights
+
+This policy does not limit any rights you have under the Consumer Protection Act, 2019 or other Indian law.
+
+## Contact
+
+Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India
+Phone / WhatsApp: +91 70758 59034

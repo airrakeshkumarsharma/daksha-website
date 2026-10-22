@@ -18,6 +18,8 @@ for (const f of files) {
   const h1 = (h.match(/<h1[\s>]/g) || []).length; if (h1 !== 1) fail(f, `${h1} h1`);
   for (const p of ["/privacy-policy/", "/terms/", "/refund-policy/", "/shipping-policy/", "/warranty-policy/"]) if (!h.includes(`href="${BASE}${p}"`)) fail(f, `missing footer link ${p}`);
   if (!f.endsWith("404.html") && !sitemap.includes(`<loc>${canon}</loc>`)) fail(f, "not in sitemap");
+  if (/\[(?:[A-Z][^\]<>"]{3,80})\]/.test(h.replace(/<script[\s\S]*?<\/script>/g, ""))) fail(f, "visible [placeholder] text");
+  if (/"\[[^"\]]+\]"/.test(h)) fail(f, "[placeholder] in structured data");
   try { JSON.parse((h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) || [])[1]); } catch { fail(f, "bad JSON-LD"); }
   for (const [, href] of h.matchAll(/href="(\/[^"#?]*)"/g)) {
     if (!href.startsWith(BASE + "/")) { fail(f, `link outside site ${href}`); continue; }
@@ -26,5 +28,7 @@ for (const f of files) {
   }
   for (const [, src] of h.matchAll(/src="(\/[^"?]+)/g)) if (!src.startsWith(BASE + "/") || !fs.existsSync(local(src))) fail(f, `missing asset ${src}`);
 }
+for (const t of ["llms.txt", "llms-full.txt", "robots.txt"]) if (!fs.existsSync(path.join(OUT, t))) { bad++; console.log(`✗ missing ${t}`); }
+if (/\[[A-Z][^\]]{3,80}\](?!\()/.test(fs.readFileSync(path.join(OUT, "llms.txt"), "utf8"))) { bad++; console.log("✗ llms.txt has [placeholder] text"); }
 console.log(bad ? `\n${bad} problems in ${files.length} pages` : `✓ ${files.length} pages pass: unique titles/descriptions, canonical, one H1, policy links, sitemap, JSON-LD, internal links`);
 process.exit(bad ? 1 : 0);
