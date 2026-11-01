@@ -31,7 +31,8 @@ module.exports = {
     pin: "848117",
     country: "IN",
   },
-  geo: null,                                   // e.g. { lat: 25.86, lng: 85.78 } for the map pin and LocalBusiness schema
+  geo: { lat: 25.8603206, lng: 85.992359 },   // from the Google Business Profile pin; map pin and LocalBusiness schema
+  mapsUrl: "https://maps.google.com/?cid=11511285227434226066",   // Google Business Profile (stable cid link)
   hours: "[Business hours, e.g. Monday – Saturday, 10 AM – 7 PM]",
   openingHours: null,                          // for Google, once hours are known, e.g. ["Mo-Sa 10:00-19:00"]
   payment: ["Cash", "UPI", "Bank transfer", "Online payment"],   // matches the pricing page

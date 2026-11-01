@@ -445,7 +445,8 @@ const contact = () => ({
       <h2>Complaints &amp; grievances</h2>
       <p>If something went wrong, ${real(S.grievance.email) ? `write to our grievance officer at <a href="mailto:${esc(S.grievance.email)}">${esc(S.grievance.email)}</a>` : `call or WhatsApp us at <a href="tel:${S.phoneE164}">${esc(S.phone)}</a> and ask for our grievance officer`} (details in our <a href="/privacy-policy/#grievance-officer">Privacy Policy</a>). We acknowledge within 48 hours and aim to resolve within 30 days.</p>
     </div>
-    ${S.geo ? `<div class="map"><iframe title="Map to ${esc(S.brand)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=${S.geo.lat},${S.geo.lng}&z=16&output=embed"></iframe></div>`
+    ${S.geo ? `<div><div class="map"><iframe title="Map to ${esc(S.brand)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=${S.geo.lat},${S.geo.lng}&z=16&output=embed"></iframe></div>`
+      + (S.mapsUrl ? `<p class="mono" style="margin-top:10px"><a href="${S.mapsUrl}" target="_blank" rel="noopener">Open in Google Maps, or leave us a review →</a></p>` : "") + `</div>`
       : `<div class="map" style="display:grid;place-items:center;text-align:center;padding:24px"><p class="mono" style="color:var(--text-2)">${esc(S.address.city)}, ${esc(S.address.state)}<br><a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(S.brand + " " + S.address.city)}" target="_blank" rel="noopener">Open in Google Maps →</a></p></div>`}
   </div>
 </div></section>`,

@@ -77,7 +77,8 @@ const business = () => ({
     addressRegion: addr.state, postalCode: addr.pin, addressCountry: addr.country },
   ...(S.geo ? { geo: { "@type": "GeoCoordinates", latitude: S.geo.lat, longitude: S.geo.lng } } : {}),
   areaServed: S.areaServed.map((n) => ({ "@type": "Place", name: n })),
-  sameAs: [],
+  ...(S.mapsUrl ? { hasMap: S.mapsUrl } : {}),
+  sameAs: S.mapsUrl ? [S.mapsUrl] : [],
 });
 
 function head({ title, description, path: p, type = "website", schema = [], noindex = false }) {
