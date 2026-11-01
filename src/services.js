@@ -1,4 +1,5 @@
-/* One entry per service page. `title` (≤ 60 chars with brand) and `description` (≤ 160 chars) are the SEO snippet. */
+/* One entry per service page. `title` (≤ 60 chars with brand) and `description` (≤ 160 chars) are the SEO snippet.
+   `kw` is the plain search phrase printed above the `h1` slogan, inside the same heading. */
 const ic = (paths) => `<svg viewBox="0 0 64 64" fill="none" stroke="#EBB909" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
 
 const ICONS = {
@@ -8,14 +9,16 @@ const ICONS = {
   school: ic(`<path d="M4 24l28-12 28 12-28 12z"/><path d="M16 29v12c0 4 7 8 16 8s16-4 16-8V29"/><path d="M60 24v14"/>`),
   web: ic(`<rect x="8" y="10" width="48" height="44" rx="3"/><path d="M8 20h48"/><path d="M24 30l-6 6 6 6M40 30l6 6-6 6M35 28l-6 16"/>`),
   cctv: ic(`<path d="M6 16l34 10-4 12L4 28z"/><path d="M40 26l8-2 2 8-12 4"/><path d="M14 31l-2 9H4M12 40v12"/><circle cx="20" cy="26" r="2"/>`),
+  battery: ic(`<rect x="6" y="20" width="46" height="24" rx="4"/><path d="M52 28h5v8h-5"/><path d="M14 28v8M22 28v8M30 28v8"/>`),
   marketing: ic(`<path d="M10 26v12h8l18 10V16L18 26z"/><path d="M44 24a10 10 0 0 1 0 16M50 18a18 18 0 0 1 0 28"/><path d="M18 38l4 14h6l-3-12"/>`),
 };
 
 const list = [
   {
     slug: "computer-sales", short: "Computer sales & upgrades", icon: "computer", key: "F1", products: ["computers", "storage", "keyboards-mice"],
-    title: "Computer & Laptop Sales, Samastipur",
-    description: "New desktops, laptops, printers and upgrades (SSD, RAM) chosen for your work and budget. Installed and set up by Daksha Systems, Samastipur.",
+    title: "Computer & Laptop Shop in Samastipur",
+    description: "Computer and laptop shop in Samastipur: new desktops, laptops, printers and SSD or RAM upgrades for your work and budget, installed and set up by us.",
+    kw: "Computer & laptop shop, Samastipur",
     h1: "Computers that fit the job, not the showroom.",
     lede: "We help shops, offices, schools and coaching centres buy the right desktop, laptop or printer — then install, set up and stand behind it.",
     card: "Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.",
@@ -37,6 +40,7 @@ const list = [
     slug: "repair-amc", short: "Repair & AMC", icon: "repair", key: "F2",
     title: "Computer & Laptop Repair, AMC in Samastipur",
     description: "Desktop and laptop repair, virus removal, Windows reinstall and Annual Maintenance Contracts for shops, offices and schools in Samastipur, Bihar.",
+    kw: "Computer, laptop & printer repair, Samastipur",
     h1: "Repair today. Fewer breakdowns tomorrow.",
     lede: "Diagnosis, repair and preventive maintenance for desktops, laptops and printers — at your counter, office or computer lab.",
     card: "Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.",
@@ -45,12 +49,14 @@ const list = [
       "Slow computer, won't start, blue screen, overheating, noisy fan",
       "Virus and malware removal, Windows reinstall, driver fixes",
       "Hard disk / SSD replacement and data copy where the drive is readable",
-      "Printer, network and Wi-Fi problems",
+      "Printer repair: not printing, paper jams, cartridge and driver problems",
+      "Network and Wi-Fi problems",
       "AMC: scheduled check-ups, priority visits and a service record per machine",
     ],
     faq: [
       ["Will you tell me the cost before repairing?", "Yes. We diagnose first and give you an estimate. Paid work starts only after you approve it."],
       ["Can you recover data from a dead hard disk?", "If the drive still reads, we copy your data before working on it. Lab-grade recovery from physically damaged drives is not something we do in-house; we will tell you honestly when a drive needs a specialist."],
+      ["Do you repair printers?", "Yes. We fix common printer problems such as not printing, paper jams, faded prints, cartridge or ink errors and driver issues, and set printers up on your computer or network. If a printer isn't worth repairing, we'll tell you."],
       ["What does an AMC cover?", "Routine maintenance visits, priority response and labour for covered machines. Spare parts are billed separately unless the contract says otherwise. Exact scope is written in your AMC agreement."],
     ],
   },
@@ -58,6 +64,7 @@ const list = [
     slug: "cctv-installation", short: "CCTV installation", icon: "cctv", key: "F3", products: ["cctv"],
     title: "CCTV Camera Installation in Samastipur",
     description: "CCTV cameras for shops, homes, offices and schools: site visit, cameras, recorder, wiring and mobile viewing, installed by Daksha Systems, Samastipur.",
+    kw: "CCTV camera installation, Samastipur",
     h1: "See your shop from your phone — day and night.",
     lede: "We plan, supply and install CCTV for shops, homes, offices, schools and coaching centres, then set it up so you can watch live and recorded video on your mobile.",
     card: "Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.",
@@ -74,13 +81,15 @@ const list = [
       ["Can I watch the cameras on my mobile?", "Yes. We set up the viewing app on your phone. Watching from outside your premises needs a working internet connection at the site."],
       ["Will it record during a power cut?", "Only if the recorder and cameras have backup power. We recommend connecting them to a UPS or inverter, and can supply one."],
       ["Do you keep access to my cameras?", "No. We set the passwords during installation and hand them over to you. Change them whenever you like; we only need access if you ask us for support."],
+      ["Do you install CCTV and Wi-Fi cameras for homes?", "Yes. For a small home, one or two Wi-Fi cameras that record to a memory card can be enough. For more cameras, outdoor areas or longer recording, a wired kit with a recorder is more reliable. We suggest what fits after seeing the place."],
       ["What about privacy?", "Cameras should cover your own premises. We won't point cameras into a neighbour's property or a private area such as a washroom."],
     ],
   },
   {
     slug: "billing-software", short: "Billing & stock software", icon: "billing", key: "F4",
-    title: "GST Billing, Stock & Khata Software for Shops",
+    title: "GST Billing & Khata Software for Shops",
     description: "Offline GST billing, stock, udhaar khata and service-job software for Indian shops. Runs on your computer, no monthly fee, with automatic backups.",
+    kw: "GST billing & khata software for shops",
     h1: "Billing software that works even when the internet doesn't.",
     lede: "GST invoices, estimates, stock, customer khata and service jobs — on your own computer, with backups that look after themselves.",
     card: "GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.",
@@ -101,8 +110,9 @@ const list = [
   },
   {
     slug: "school-coaching-software", short: "School & coaching software", icon: "school", key: "F5",
-    title: "School & Coaching Institute Management Software",
+    title: "School & Coaching Management Software",
     description: "Admissions, attendance, fee collection and receipts, and reports for schools and coaching institutes. Built and supported locally by Daksha Systems.",
+    kw: "School & coaching management software",
     h1: "Fees, attendance and admissions — off paper, in one place.",
     lede: "Software for schools and coaching institutes that the office staff can actually use, set up and supported by people you can call.",
     card: "Admissions, attendance, fees and receipts for schools and coaching institutes.",
@@ -122,8 +132,9 @@ const list = [
   },
   {
     slug: "websites-ecommerce", short: "Websites & e-commerce", icon: "web", key: "F6",
-    title: "Website Design, Catalogue & E-commerce Websites",
+    title: "Website Design & E-commerce Websites",
     description: "Fast business websites, product catalogues and e-commerce stores with payment gateway setup, built for local businesses by Daksha Systems.",
+    kw: "Website design & e-commerce websites",
     h1: "A website that brings customers, not just a link in your bio.",
     lede: "Business websites, product catalogues and online stores — fast, mobile-first, search-friendly, and yours to keep.",
     card: "Business websites, product catalogues and online stores with payment setup.",
@@ -142,9 +153,35 @@ const list = [
     ],
   },
   {
-    slug: "digital-marketing", short: "Google & social marketing", icon: "marketing", key: "F7",
-    title: "Google Business Profile & Social Media Marketing",
+    slug: "laptop-battery-replacement", short: "Laptop battery replacement", icon: "battery", key: "F7",
+    title: "Laptop Battery Replacement in Samastipur",
+    description: "Laptop battery replacement for HP, Dell, Lenovo, Asus and Acer in Samastipur. Battery health check first, a price for your model, fitted at our shop.",
+    kw: "Laptop battery replacement, Samastipur",
+    h1: "Laptop battery not lasting? We'll check it, then replace it.",
+    lede: "We test your battery first, give you the price for a battery that fits your exact model, and fit it for you.",
+    card: "Battery health check, a battery for your exact model, and fitting at our shop.",
+    tool: { text: "Want to know first? Check your battery health yourself in two minutes.", href: "/tools/laptop-battery-health-check/", label: "Free laptop battery health check" },
+    includes: [
+      "Battery health check from the laptop's own battery report, before you pay for anything",
+      "A battery matched to your laptop's model and battery part number",
+      "The quote says whether the battery is the brand's original or a compatible one",
+      "Fitting at the shop, including laptops whose battery is inside the case",
+      "Charger and charging-port check if the laptop isn't charging at all",
+      "Warranty on the battery as written on your invoice",
+    ],
+    faq: [
+      ["How do I know my laptop battery needs replacing?", "Backup has dropped a lot, the laptop switches off before 0%, or it only works when plugged in. Our free battery health check on this website gives you the exact percentage: below 60% usually means it's time."],
+      ["How much does a laptop battery cost?", "It depends on the brand, model and whether you choose an original or compatible battery. Send us your laptop's model number on WhatsApp and we'll reply with the price and availability."],
+      ["Where do I find my laptop's model number?", "On the sticker under the laptop, or in Windows: press the Windows key, type System Information, and look for System Model."],
+      ["My laptop works only when plugged in. Is it the battery?", "Usually, but not always. A faulty charger or charging port can look the same. We check all three before suggesting a new battery."],
+      ["My battery is swollen. What should I do?", "Stop using the laptop on battery, don't press on the case, and bring it in. A swollen battery should be replaced, not charged."],
+    ],
+  },
+  {
+    slug: "digital-marketing", short: "Google & social marketing", icon: "marketing", key: "F8",
+    title: "Google Business Profile & Social Marketing",
     description: "Get found on Google Maps and social media: Google Business Profile setup, posts, reviews strategy and local marketing for Samastipur businesses.",
+    kw: "Google Business Profile & social media marketing",
     h1: "Get found by people already looking for you.",
     lede: "Local marketing that starts where your customers search: Google Maps, Google Search, WhatsApp and social media.",
     card: "Google Business Profile, Maps, social media pages and local promotion.",

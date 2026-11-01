@@ -23,9 +23,9 @@ function doc(p, h1, lede, sections) {
 const privacy = () => ({
   path: "/privacy-policy/",
   title: "Privacy Policy",
-  description: "How Daksha Systems collects, uses, stores and protects personal data across our website, services, payments and Daksh billing software, under Indian law.",
+  description: "How Daksha Systems collects, uses, stores and protects personal data across our website, services, payments and Daksha billing software, under Indian law.",
   body: doc("/privacy-policy/", "Privacy Policy", "What we collect, why, where it is stored, who it is shared with, and the rights you have over it.", [
-    ["Who we are", `<p>This policy is published by ${who()} ("Daksha Systems", "we", "us"). It covers this website (<b>${esc(HOST)}</b>), the services we provide in person and online, payments made to us, and the <b>Daksh Systems</b> desktop software we publish.</p>
+    ["Who we are", `<p>This policy is published by ${who()} ("Daksha Systems", "we", "us"). It covers this website (<b>${esc(HOST)}</b>), the services we provide in person and online, payments made to us, and the <b>Daksha Systems</b> desktop software we publish.</p>
       <p>We follow the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and the Digital Personal Data Protection Act, 2023 to the extent in force. For the purposes of these laws, Daksha Systems is the Data Fiduciary for the personal data described here.</p>`],
     ["Information we collect", `<table>
       <tr><th>Where</th><th>What</th><th>Why</th></tr>
@@ -39,7 +39,7 @@ const privacy = () => ({
     </table>
     <p><b>We never ask for or store</b> your card numbers, CVV, UPI PIN, net-banking passwords or OTPs. Those are entered only on the payment gateway's secure page.</p>`],
     ["Payments", `<p>Online payments are processed by a licensed third-party payment gateway (for example Razorpay, Cashfree, PayU or PhonePe, as shown at checkout). Card, UPI and bank details are collected and processed by the gateway under its own privacy policy and PCI-DSS obligations. We receive only the information needed to confirm your payment, such as the transaction ID, amount, status and the contact details you entered.</p>`],
-    ["Daksh Systems desktop software", `<p>The Daksh billing software is <b>local-first</b>. Your bills, customers, stock, payments and settings are stored in a database on <b>your own computer</b> (or pen drive in the portable edition), and in backup folders you choose. <b>This data is not sent to Daksha Systems.</b></p>
+    ["Daksha Systems desktop software", `<p>The Daksha billing software is <b>local-first</b>. Your bills, customers, stock, payments and settings are stored in a database on <b>your own computer</b> (or pen drive in the portable edition), and in backup folders you choose. <b>This data is not sent to Daksha Systems.</b></p>
       <p>The licence check works offline. To activate, the app shows an install code; you send it to us and we send back an activation code. We keep a record of install codes and the licences issued.</p>
       <h3>Optional Google Drive &amp; Sheets copy</h3>
       <p>If you choose to connect a Google account inside the app, the app asks Google for the <code>https://www.googleapis.com/auth/drive.file</code> permission only. This lets the app create and update <b>only the files and folder it creates</b> in your Google Drive (a backup folder and a spreadsheet of your shop data). It cannot see, read or change any other file in your Drive.</p>
@@ -120,7 +120,7 @@ const terms = () => ({
       <li>Devices not collected within 60 days of our notice that the job is ready may be disposed of to recover costs, after a final reminder.</li>
     </ul>`],
     ["Software licences", `<ul>
-      <li>Daksh Systems software is licensed, not sold. A licence lets you use the software on the computer it is activated on, for your own business.</li>
+      <li>Daksha Systems software is licensed, not sold. A licence lets you use the software on the computer it is activated on, for your own business.</li>
       <li>You may not copy, resell, reverse-engineer, or share activation codes.</li>
       <li>The free trial is for evaluation. After it ends, the software locks until activated; your data is not deleted.</li>
       <li>Your data remains your property. You are responsible for keeping backups and for the accuracy of invoices and tax filings you make with the software; it is a record-keeping tool, not tax or legal advice.</li>

@@ -42,7 +42,7 @@ const POLICIES = [
   ["/warranty-policy/", "Warranty & Returns"],
 ];
 /* Pages that aren't in the header but still need a breadcrumb name. */
-const OTHER_PAGES = [["/what-we-do/", "What we do"]];
+const OTHER_PAGES = [["/what-we-do/", "What we do"], ["/tools/", "Free tools"], ["/tools/laptop-battery-health-check/", "Laptop battery health check"]];
 
 /* Products and services as an OfferCatalog, so search engines and AI agents can see what is sold. */
 function catalog() {
@@ -133,6 +133,7 @@ function breadcrumb(p) {
   const names = Object.fromEntries([...NAV, ...OTHER_PAGES, ...POLICIES, ...SERVICES.map((s) => [`/services/${s.slug}/`, s.short])]);
   const out = [["/", "Home"]];
   if (p.startsWith("/services/") && p !== "/services/") out.push(["/services/", "Services"]);
+  if (p.startsWith("/tools/") && p !== "/tools/") out.push(["/tools/", "Free tools"]);
   out.push([p, names[p] || "Page"]);
   return out;
 }
@@ -169,7 +170,7 @@ const footer = () => `
       <div><h4>Company</h4><ul>
         <li><a href="/products/">Products &amp; accessories</a></li>
         <li><a href="/about/">About us</a></li><li><a href="/what-we-do/">What we do &amp; don't</a></li>
-        <li><a href="/software/">Daksh billing software</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+        <li><a href="/software/">Daksha billing software</a></li><li><a href="/tools/">Free tools</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><h4>Reach us</h4>
         <address>${esc(S.brand)}<br>${esc(addrLine)}<br>
         <a href="tel:${S.phoneE164}">${esc(S.phone)}</a>${real(S.email) ? `<br><a href="mailto:${esc(S.email)}">${esc(S.email)}</a>` : ""}${real(S.hours) ? `<br>${esc(S.hours)}` : ""}</address></div>
@@ -194,4 +195,4 @@ function page(meta, body) {
   return rebase(`${head(meta)}\n<body>${header(meta.path)}\n<main id="main">${body}</main>${footer()}`);
 }
 
-module.exports = { page, real, esc, url, waLink, crumbsHtml, MARK, WA_ICON, PHONE_ICON, NAV, POLICIES, SERVICES, ORIGIN, BASE, HOST, addrLine, S };
+module.exports = { page, real, esc, url, ver, waLink, crumbsHtml, MARK, WA_ICON, PHONE_ICON, NAV, POLICIES, SERVICES, ORIGIN, BASE, HOST, addrLine, S };

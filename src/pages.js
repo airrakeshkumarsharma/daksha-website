@@ -15,16 +15,17 @@ const faqSchema = (faq) => ({ "@type": "FAQPage", mainEntity: faq.map(([q, a]) =
 const faqHtml = (faq) => `<div class="faq">${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>`;
 
 const SHOP_ICON = `<svg viewBox="0 0 64 64" fill="none" stroke="#EBB909" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="30" width="34" height="18" rx="3"/><path d="M12 36h4M20 36h4M28 36h4M12 42h20"/><path d="M48 18c6 0 9 4 9 10v10a9 9 0 0 1-18 0V28c0-6 3-10 9-10zM48 18v10"/></svg>`;
-const SHOP_KEY = { href: "/products/", key: "F8", ic: SHOP_ICON, short: "Products & accessories", card: "Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp." };
-/* `withShop` adds the products key; 8 keys sit in a 4-column grid. */
-const keys = (items = SERVICES, withShop = false) => {
+const SHOP_KEY = { href: "/products/", key: "F9", ic: SHOP_ICON, short: "Products & accessories", card: "Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp." };
+/* `withShop` adds the products key; 8 keys sit in a 4-column grid, 9 in three rows of three.
+   `hl` is the card heading level: 2 when the grid follows the H1 directly. */
+const keys = (items = SERVICES, withShop = false, hl = 3) => {
   const all = items.map((s) => ({ href: `/services/${s.slug}/`, key: s.key, ic: ICONS[s.icon], short: s.short, card: s.card }));
   if (withShop) all.push(SHOP_KEY);
   return `<div class="keys${all.length === 8 ? " k4" : ""}">${all.map((s, i) => `
   <a class="key reveal${i === 2 ? " hl" : ""}" href="${s.href}">
     <span class="cap">${s.key}</span>
     <div class="ic">${s.ic}</div>
-    <h3>${esc(s.short)}</h3>
+    <h${hl}>${esc(s.short)}</h${hl}>
     <p>${esc(s.card)}</p>
     <span class="more">Explore →</span>
   </a>`).join("")}</div>`;
@@ -111,10 +112,12 @@ const cta = (h = "Tell us what your business needs. We'll tell you honestly what
   <div class="cta-row" style="margin:0">${waBtn("Chat on WhatsApp")}<a class="btn alt" href="tel:${S.phoneE164}">Call ${esc(S.phone)}</a></div>
 </div></section>`;
 
-const phead = (p, h1, lede) => `<section class="phead"><div class="wrap">${crumbsHtml(p)}<h1>${h1}</h1>${lede ? `<p>${lede}</p>` : ""}</div></section>`;
+/* `kw` puts the plain search phrase above a slogan H1; the hidden colon keeps the text readable as one line. */
+const h1kw = (kw) => `<span class="h1-kw">${esc(kw)}<i>: </i></span>`;
+const phead = (p, h1, lede, kw) => `<section class="phead"><div class="wrap">${crumbsHtml(p)}<h1>${kw ? h1kw(kw) : ""}${h1}</h1>${lede ? `<p>${lede}</p>` : ""}</div></section>`;
 
 const HOME_FAQ = [
-  ["Where are you located?", `We are in ${S.address.city}, ${S.address.state}. See the contact page for the full address and directions.`],
+  ["Where are you located?", `Our shop is on ${S.address.street}, ${S.address.locality}, in ${S.address.city} district, ${S.address.state}. See the contact page for directions.`],
   ["Do you work only with shops?", "No. We work with shops, offices, schools, coaching institutes and anyone who needs computers, repairs, software or a website."],
   ["Do you sell keyboards, mice and other accessories?", "Yes. Keyboards, mice, cables, chargers, pen drives, hard disks, RAM, routers, printers, headphones, speakers and more. See the products page and tap Enquire to get the current price on WhatsApp."],
   ["Do you install CCTV cameras?", "Yes. We visit the site, plan camera positions, supply the cameras and recorder, do the wiring and set up viewing on your phone, for shops, homes, offices and schools."],
@@ -125,7 +128,7 @@ const HOME_FAQ = [
 
 const home = () => ({
   path: "/",
-  title: "Daksha Systems — Computers, CCTV & Software, Samastipur",
+  title: "Daksha Systems — Computer Shop, CCTV & Software, Samastipur",
   description: "Computers, keyboards, mice & accessories, CCTV installation, repair & AMC, and GST billing software in Samastipur, Bihar. Enquire on WhatsApp or call.",
   schema: [faqSchema(HOME_FAQ)],
   body: `
@@ -133,7 +136,7 @@ const home = () => ({
   <div class="wrap">
     <div>
       <div class="prompt"><i>&gt;</i> daksha build --for <span class="typed" data-words="your-shop,your-school,your-coaching,your-office,your-home">your-shop</span><span class="caret" aria-hidden="true"></span></div>
-      <h1 id="h">Computers, CCTV &amp; software for businesses that <em>can't stop.</em></h1>
+      <h1 id="h">${h1kw(`Computer shop in Rosera, ${S.address.city}`)}Computers, CCTV &amp; software for businesses that <em>can't stop.</em></h1>
       <p class="lede"><b>Keyboards, mice and accessories</b> off the shelf, <b>CCTV cameras</b> installed and on your phone, computers repaired, and <b>billing software</b> on the counter — one local team in ${esc(S.address.city)} that picks up the phone.</p>
       <div class="cta-row">${waBtn("WhatsApp us")}<a class="btn ghost" href="/products/">Browse products</a></div>
       <div class="trust"><span>GST invoice on every sale</span><span>CCTV installed by us</span><span>Your data stays yours</span></div>
@@ -191,7 +194,7 @@ const home = () => ({
   <div class="wrap split">
     <div>
       <span class="kicker">Our product</span>
-      <h2 id="sw">Daksh billing software. Built for the counter, not the cloud.</h2>
+      <h2 id="sw">Daksha billing software. Built for the counter, not the cloud.</h2>
       <p>GST invoices, estimates, stock, service jobs and customer khata — on your own computer. No monthly rent. If the internet goes, billing doesn't.</p>
       <ul class="checks">
         <li>Works fully offline on Windows</li>
@@ -201,7 +204,7 @@ const home = () => ({
       </ul>
       <a class="btn" href="/software/">See the software</a>
     </div>
-    <div class="window" role="img" aria-label="Illustration of the Daksh billing software home screen">
+    <div class="window" role="img" aria-label="Illustration of the Daksha billing software home screen">
       <div class="bar"><i></i><i></i><i></i></div>
       <div class="body">
         <div class="tile y"><small>Aaj ki sale</small><b>₹ ••••</b></div>
@@ -256,10 +259,10 @@ ${cta()}`,
 
 const servicesIndex = () => ({
   path: "/services/",
-  title: "Services: Computers, CCTV, Repair, Software, Web",
+  title: "Services: Computers, CCTV, Repair & Web",
   description: "Daksha Systems services in Samastipur: computer sales, CCTV installation, repair & AMC, GST billing software, school software, websites and marketing.",
-  body: `${phead("/services/", "Everything your business runs on.", "Pick a key. Each service page lists exactly what's included, and the questions people ask before they call.")}
-<section><div class="wrap">${keys(SERVICES, true)}</div></section>
+  body: `${phead("/services/", "Everything your business runs on.", "Pick a key. Each service page lists exactly what's included, and the questions people ask before they call.", `Computer, CCTV & software services, ${S.address.city}`)}
+<section><div class="wrap">${keys(SERVICES, true, 2)}</div></section>
 <section class="cream"><div class="wrap"><div class="sec-head"><span class="kicker">Scope</span><h2>Before you ask — here's what's in and out.</h2></div>${receipts()}</div></section>
 ${cta()}`,
 });
@@ -270,12 +273,13 @@ const servicePage = (s) => ({
   description: s.description,
   schema: [{ "@type": "Service", name: s.short, serviceType: s.short, description: s.description, url: url(`/services/${s.slug}/`),
     provider: { "@id": url("/#business") }, areaServed: S.areaServed.map((n) => ({ "@type": "Place", name: n })) }, faqSchema(s.faq)],
-  body: `${phead(`/services/${s.slug}/`, esc(s.h1), esc(s.lede))}
+  body: `${phead(`/services/${s.slug}/`, esc(s.h1), esc(s.lede), s.kw)}
 <section><div class="wrap split" style="align-items:start">
   <div>
     <span class="kicker">What's included</span>
     <h2>${esc(s.short)}</h2>
     <ul class="checks">${s.includes.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
+    ${s.tool ? `<p class="note">${esc(s.tool.text)} <a href="${s.tool.href}">${esc(s.tool.label)} →</a></p>` : ""}
     <div class="cta-row">${waBtn("Ask about this", `Hi Daksha Systems, I'd like to know more about ${s.short}.`)}<a class="btn ghost" style="color:var(--ink);border-color:var(--ink);box-shadow:0 4px 0 var(--ink)" href="/pricing/">See pricing</a></div>
   </div>
   <div>
@@ -298,13 +302,13 @@ const SW_FAQ = [
 ];
 const software = () => ({
   path: "/software/",
-  title: "Daksh: Offline GST Billing & Khata Software",
-  description: "Daksh: offline GST billing, estimates, stock, service jobs and customer khata for Indian shops. No monthly fee, automatic backups, optional Google Drive copy.",
+  title: "Daksha Billing Software: Offline GST & Khata",
+  description: "Daksha billing software: offline GST billing, stock, service jobs and customer khata for Indian shops. No monthly fee, automatic backups.",
   type: "product",
-  schema: [{ "@type": "SoftwareApplication", name: "Daksh Systems billing software", applicationCategory: "BusinessApplication",
+  schema: [{ "@type": "SoftwareApplication", name: "Daksha Systems billing software", applicationCategory: "BusinessApplication",
     operatingSystem: "Windows 10, Windows 11", description: "Offline GST billing, stock, service jobs and customer khata software for shops.",
     publisher: { "@id": url("/#business") }, url: url("/software/") }, faqSchema(SW_FAQ)],
-  body: `${phead("/software/", "Daksh billing software", "GST billing, stock, service jobs and customer khata for your counter. Runs on your computer. Keeps working when the internet doesn't.")}
+  body: `${phead("/software/", "Daksha billing software", "GST billing, stock, service jobs and customer khata for your counter. Runs on your computer. Keeps working when the internet doesn't.")}
 <section><div class="wrap split">
   <div>
     <span class="kicker">On the counter</span>
@@ -318,7 +322,7 @@ const software = () => ({
       <li><b>Reports</b> — monthly GST by HSN for your CA, baaki by age, sales by period.</li>
     </ul>
   </div>
-  <div class="window" role="img" aria-label="Illustration of the Daksh home screen with today's sales">
+  <div class="window" role="img" aria-label="Illustration of the Daksha home screen with today's sales">
     <div class="bar"><i></i><i></i><i></i></div>
     <div class="body">
       <div class="tile y"><small>Aaj ka hisab</small><b>₹ ••••</b></div><div class="tile"><small>Cash in</small><b>₹ ••••</b></div><div class="tile"><small>Udhaar</small><b>₹ ••••</b></div>
@@ -375,7 +379,7 @@ ${cta()}`,
 
 const pricing = () => ({
   path: "/pricing/",
-  title: "Pricing — CCTV, Software, Websites, Repair & AMC",
+  title: "Prices: CCTV, Software, Websites & Repair",
   description: "Prices for Daksha Systems CCTV kits, billing software licences, websites, computer repair and AMC. Every order gets a written quote and a GST invoice.",
   body: `${phead("/pricing/", "Pricing", "Clear prices for standard work. Custom jobs get a written quote before anything starts — and every payment gets a GST invoice.")}
 <section><div class="wrap" style="max-width:900px">
@@ -429,9 +433,9 @@ const contact = () => ({
   body: `${phead("/contact/", "Talk to a person.", "WhatsApp is fastest. Calls are answered during business hours. You're welcome to visit.")}
 <section><div class="wrap">
   <div class="cards">
-    <div class="card"><h3>WhatsApp</h3><p><a href="${waLink("Hi Daksha Systems, ")}" target="_blank" rel="noopener">${esc(S.phone)}</a></p><p style="margin-top:8px">Send photos of the problem or details of what you need.</p></div>
-    <div class="card"><h3>Call</h3><p><a href="tel:${S.phoneE164}">${esc(S.phone)}</a></p><p style="margin-top:8px">${real(S.hours) ? esc(S.hours) : "Calls are answered during business hours."}</p></div>
-    ${real(S.email) ? `<div class="card"><h3>Email</h3><p><a href="mailto:${esc(S.email)}">${esc(S.email)}</a></p><p style="margin-top:8px">For quotes, invoices and policy questions.</p></div>` : ""}
+    <div class="card"><h2>WhatsApp</h2><p><a href="${waLink("Hi Daksha Systems, ")}" target="_blank" rel="noopener">${esc(S.phone)}</a></p><p style="margin-top:8px">Send photos of the problem or details of what you need.</p></div>
+    <div class="card"><h2>Call</h2><p><a href="tel:${S.phoneE164}">${esc(S.phone)}</a></p><p style="margin-top:8px">${real(S.hours) ? esc(S.hours) : "Calls are answered during business hours."}</p></div>
+    ${real(S.email) ? `<div class="card"><h2>Email</h2><p><a href="mailto:${esc(S.email)}">${esc(S.email)}</a></p><p style="margin-top:8px">For quotes, invoices and policy questions.</p></div>` : ""}
   </div>
   <div class="split" style="margin-top:56px;align-items:start">
     <div class="prose">
@@ -456,7 +460,7 @@ const PRODUCTS_FAQ = [
 ];
 const products = () => ({
   path: "/products/",
-  title: "Computer Accessories, CCTV & Parts — Products",
+  title: "Computer Accessories, CCTV & Parts",
   description: `Keyboards, mice, CCTV cameras, computers, hard disks, RAM, routers, printers and accessories in ${S.address.city}. Enquire on WhatsApp for price.`,
   schema: [faqSchema(PRODUCTS_FAQ)],
   body: `${phead("/products/", "Products &amp; accessories", "Everything from a keyboard to a full CCTV kit. Tap <b>Enquire</b> to get today's price and availability on WhatsApp, or add several items to a list and send them together.")}
@@ -503,4 +507,4 @@ const notFound = () => ({
   </div></section>`,
 });
 
-module.exports = { home, servicesIndex, servicePage, software, whatWeDo, pricing, products, about, contact, notFound, phead, cta };
+module.exports = { home, servicesIndex, servicePage, software, whatWeDo, pricing, products, about, contact, notFound, phead, cta, faqSchema, faqHtml, waBtn };

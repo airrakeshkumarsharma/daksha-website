@@ -1,0 +1,217 @@
+/* Free tools. Each tool page keeps its steps, tables and FAQ in plain HTML (search engines and
+   llms-full.txt read them); the interactive part is a small script in docs/assets/. */
+const { esc, url, S } = require("./layout");
+const { phead, cta, faqSchema, faqHtml, waBtn } = require("./pages");
+
+const UPDATED = { iso: "2026-11-01", text: "1 November 2026" };
+const CMD = "powercfg /batteryreport";   // plain form works in both Command Prompt and PowerShell
+/* Main flow: makes the report and opens it in the browser, so nobody has to find the file. Readable
+   and Microsoft-documented on purpose; a hidden PowerShell line pasted into Windows+R looks like the
+   ClickFix scam (see research/battery-tool-dropoff-2026-11-01.md). "&&" needs Command Prompt. */
+const QUICK = "powercfg /batteryreport && battery-report.html";
+
+const list = [
+  { path: "/tools/laptop-battery-health-check/", name: "Laptop battery health check",
+    card: "Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings." },
+];
+
+const BATTERY_FAQ = [
+  ["Is it safe to use my battery report here?", "Yes. Your browser reads the file on your own laptop. It is never uploaded, and the page has no sign-up or tracking form. The report lists your laptop's model and battery history, nothing personal like files or passwords."],
+  ["Is 80% battery health good?", "Yes. At 80% or more the battery still holds most of its original charge, and 80% is the level most makers treat as the end of a healthy battery's rated life. Between 60% and 79% it still works, with clearly shorter backup."],
+  ["What does \"No batteries are currently installed\" in the battery report mean?", "Windows can't see a battery. That's normal on a desktop. On a laptop it usually means the battery is dead, disconnected inside, or not being detected, and it needs a check or a replacement."],
+  ["Why does my report show a cycle count of \"-\"?", "Some laptops don't pass the cycle count to Windows. The health percentage is still correct, because it comes from the two capacity numbers, not the cycle count."],
+  ["How many charge cycles is too many?", "It depends on the battery. Apple rates current MacBook batteries for 1,000 cycles; many Windows laptop batteries are rated for a few hundred to 1,000. The health percentage tells you more than the cycle count alone."],
+  ["Does this work on HP, Dell, Lenovo, Asus and Acer laptops?", "Yes. Every Windows 10 and Windows 11 laptop can create the battery report with the same command, whatever the brand."],
+  ["Can I check battery health without the command?", "On Windows, the battery report is the built-in way. Some makers also show health in their own apps, such as Lenovo Vantage, Dell Power Manager or HP Support Assistant. On a MacBook it's in System Settings, no command needed."],
+];
+
+const ic = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const BATTERY_IC = `<svg viewBox="0 0 64 64" fill="none" stroke="#EBB909" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="20" width="46" height="24" rx="4"/><path d="M52 28h5v8h-5"/><path d="M14 28v8M22 28v8M30 28v8"/></svg>`;
+
+function battery() {
+  const p = list[0].path;
+  const shopWa = `https://wa.me/${S.whatsapp}?text=`;
+  const shareWa = "https://wa.me/?text=" + encodeURIComponent("Check my laptop battery health: " + url(p));
+  return {
+    path: p,
+    title: "How to Check Laptop Battery Health Online",
+    description: "Free online laptop battery health check in 2 steps: copy one line, paste the result here. See battery health %, charge cycles and if it needs replacing.",
+    schema: [
+      { "@type": "WebApplication", name: "Laptop battery health check", url: url(p), applicationCategory: "UtilitiesApplication",
+        operatingSystem: "Windows 10, Windows 11, macOS", browserRequirements: "Any modern browser", inLanguage: "en-IN",
+        isAccessibleForFree: true, dateModified: UPDATED.iso, offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+        provider: { "@id": url("/#business") } },
+      faqSchema(BATTERY_FAQ),
+    ],
+    body: `${phead(p, "How to check laptop battery health").replace('class="phead"', 'class="phead slim"')}
+<section class="bt-sec"><div class="wrap">
+  <div class="bt" id="bt">
+    <div class="bt-tabs" role="tablist" aria-label="Your device">
+      <button type="button" role="tab" data-os="win" aria-selected="true">Windows laptop</button>
+      <button type="button" role="tab" data-os="mac" aria-selected="false">MacBook</button>
+      <button type="button" role="tab" data-os="phone" aria-selected="false">I'm on my phone</button>
+    </div>
+
+    <div data-panel="win">
+      <ol class="bt-steps">
+        <li><b>Open Command Prompt and paste this.</b> Press the Windows key, type <kbd>cmd</kbd> and press <kbd>Enter</kbd>. Paste this line with <kbd>Ctrl</kbd> + <kbd>V</kbd> and press <kbd>Enter</kbd>.
+          <div class="bt-cmd"><code id="bt-cmd">${esc(QUICK)}</code><button type="button" class="btn small" id="bt-copy">Copy</button></div>
+          <small>This is Windows' own battery report. It opens in your browser. Nothing is installed.</small></li>
+        <li><b>Copy the report and paste it here.</b> On the report, press <kbd>Ctrl</kbd> + <kbd>A</kbd>, then <kbd>Ctrl</kbd> + <kbd>C</kbd>. Come back to this page and paste below.
+          <textarea id="bt-paste" class="bt-paste" rows="3" spellcheck="false" autocomplete="off" aria-label="Paste the battery report here" placeholder="Click here and press Ctrl + V"></textarea>
+          <button type="button" class="btn" id="bt-check">Check my battery</button></li>
+      </ol>
+      <details class="bt-manual" id="bt-file-way">
+        <summary>Other way: use the battery report file</summary>
+        <ol class="bt-steps bt-old">
+          <li><b>Open Command Prompt.</b> Press the Windows key, type <kbd>cmd</kbd> and press Enter.</li>
+          <li><b>Type <code>${esc(CMD)}</code></b> and press Enter. Windows saves <b>battery-report.html</b>, usually in <code>C:\\Users\\your-name</code>.</li>
+          <li><b>Drop that file here.</b></li>
+        </ol>
+        <label class="bt-drop" id="bt-drop">
+          <input type="file" id="bt-file" accept=".html,.htm,text/html">
+          <span class="bt-drop-ic">${ic('<path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/>')}</span>
+          <b>battery-report.html</b>
+          <span>Drag it here, or tap to choose the file</span>
+        </label>
+      </details>
+    </div>
+
+    <div data-panel="mac" hidden>
+      <ol class="bt-steps">
+        <li><b>Battery health %:</b> Apple menu → System Settings → Battery → click ⓘ next to Battery Health. Note the <b>Maximum Capacity</b>.</li>
+        <li><b>Cycle count:</b> Apple menu → System Settings → General → About → System Report → Power. Find <b>Cycle Count</b>.</li>
+        <li>Enter them below: Maximum Capacity in <b>Holds now</b>, and 100 in <b>When new</b>.</li>
+      </ol>
+    </div>
+
+    <div data-panel="phone" hidden>
+      <p class="bt-phone"><b>This check runs on the laptop.</b> Send this page to yourself and open it on the laptop you want to check.</p>
+      <a class="btn" id="bt-share" href="${shareWa}" target="_blank" rel="noopener">Send to my WhatsApp</a>
+    </div>
+
+    <details class="bt-manual" id="bt-manual">
+      <summary>Type the numbers yourself</summary>
+      <form id="bt-form" class="bt-form" novalidate>
+        <label>When new<input id="bt-d" inputmode="numeric" autocomplete="off" placeholder="e.g. 45,600 mWh"></label>
+        <label>Holds now<input id="bt-f" inputmode="numeric" autocomplete="off" placeholder="e.g. 36,298 mWh"></label>
+        <label>Cycle count (optional)<input id="bt-c" inputmode="numeric" autocomplete="off" placeholder="e.g. 354"></label>
+        <button class="btn" type="submit">Check health</button>
+      </form>
+    </details>
+
+    <p class="bt-error" id="bt-error" role="alert" hidden></p>
+    <p class="bt-private">${ic('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>')}Everything is checked inside your browser. Nothing is uploaded.</p>
+
+    <div class="bt-result" id="bt-result" tabindex="-1" aria-live="polite" hidden>
+      <div class="bt-ring"><span><b id="bt-pct"></b><small>battery health</small></span></div>
+      <div class="bt-out">
+        <small id="bt-source"></small>
+        <h2 id="bt-verdict"></h2>
+        <p id="bt-meaning"></p>
+        <dl class="bt-facts">
+          <div><dt>When new</dt><dd id="bt-new"></dd></div>
+          <div><dt>Holds now</dt><dd id="bt-now"></dd></div>
+          <div><dt>Charge cycles</dt><dd id="bt-cycles"></dd></div>
+          <div><dt>Capacity lost</dt><dd id="bt-lost"></dd></div>
+          <div id="bt-backup" hidden><dt>Windows' backup estimate</dt><dd id="bt-backup-val"></dd></div>
+        </dl>
+        <p id="bt-over" class="bt-note" hidden>A reading slightly over 100% is normal on a new battery. The battery's own gauge estimates the charge, and the estimate can drift.</p>
+        <p id="bt-more" class="bt-note" hidden>This laptop has more than one battery. The numbers above are for all batteries together.</p>
+        <div id="bt-replace" class="bt-cta" hidden>
+          <a class="btn" data-base="${shopWa}" href="${shopWa}" target="_blank" rel="noopener">Get a replacement price on WhatsApp</a>
+          <a class="bt-link" href="/services/laptop-battery-replacement/">Battery replacement in ${esc(S.address.city)} →</a>
+        </div>
+        <button type="button" class="bt-link" id="bt-again">Check another laptop</button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="cream"><div class="wrap prose">
+  <div class="bt-answer">
+    <span class="kicker">Quick answer</span>
+    <p><b>Battery health = full charge capacity ÷ design capacity × 100.</b> On Windows, open Command Prompt, run <code>powercfg /batteryreport</code>, and compare the two capacity numbers in the report it saves. 80% or more is healthy, 60–79% means plan a replacement, and below 60% means replace soon.</p>
+    <p class="bt-meta">By ${esc(S.brand)}, ${esc(S.address.city)} · Updated <time datetime="${UPDATED.iso}">${UPDATED.text}</time></p>
+  </div>
+
+  <h2>How to check laptop battery health in Windows 11 and 10 (cmd)</h2>
+  <ol>
+    <li>Press the Windows key, type <b>cmd</b> and press Enter to open Command Prompt.</li>
+    <li>Type <code>powercfg /batteryreport</code> and press Enter. Windows saves <b>battery-report.html</b> and prints where.</li>
+    <li>Open that file in your browser and scroll to <b>Installed batteries</b>.</li>
+    <li>Divide <b>Full Charge Capacity</b> by <b>Design Capacity</b> and multiply by 100. That's your battery health.</li>
+    <li>Or skip the report: use the copy-and-paste checker above and it does the maths for you.</li>
+  </ol>
+  <p>The command works the same on HP, Dell, Lenovo, Asus, Acer and every other Windows laptop. You don't need to run Command Prompt as administrator. If you use PowerShell instead, the same command works there too.</p>
+
+  <h2>How to read your battery report</h2>
+  <p>The report is long, but three lines under <b>Installed batteries</b> are what matter.</p>
+  <table>
+    <thead><tr><th>In the report</th><th>What it means</th></tr></thead>
+    <tbody>
+      <tr><td>Design capacity</td><td>How much charge the battery held when it was new, in milliwatt-hours (mWh).</td></tr>
+      <tr><td>Full charge capacity</td><td>How much it holds today. Divide by design capacity to get health %.</td></tr>
+      <tr><td>Cycle count</td><td>Full charge-and-discharge cycles so far. Some laptops leave it blank or show "-".</td></tr>
+    </tbody>
+  </table>
+  <p>Further down, <b>Battery life estimates</b> shows how long Windows thinks the battery lasts now, compared with when it was new. It's based on how you've used the laptop, so it changes with screen brightness and workload.</p>
+
+  <h2>What is a good laptop battery health percentage?</h2>
+  <table>
+    <thead><tr><th>Battery health</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td>80–100%</td><td>Healthy. Nothing to do.</td></tr>
+      <tr><td>60–79%</td><td>Works, with shorter backup. Plan a replacement when it starts to bother you.</td></tr>
+      <tr><td>Below 60%</td><td>Replace soon. Backup is short and the laptop may switch off suddenly at low charge.</td></tr>
+    </tbody>
+  </table>
+  <p>A swollen battery, a lifted touchpad or a bulging case is a different matter: stop using the laptop on battery and get it checked straight away, whatever the percentage.</p>
+
+  <h2>How to check battery health on a MacBook</h2>
+  <p>Open the Apple menu → System Settings → Battery, then click ⓘ next to Battery Health. <b>Maximum Capacity</b> is your battery health. For the cycle count, go to Apple menu → System Settings → General → About → System Report → Power. Apple rates current MacBook batteries for 1,000 cycles.</p>
+
+  <h2>Questions people ask</h2>
+  ${faqHtml(BATTERY_FAQ)}
+</div></section>
+
+<section><div class="wrap split" style="align-items:start">
+  <div>
+    <span class="kicker">Need a new battery?</span>
+    <h2>Laptop battery replacement in ${esc(S.address.city)}</h2>
+    <p>Bring your laptop to ${esc(S.brand)} on Rosera – Hathori Kothi Road, or send us the model on WhatsApp. We check the battery, tell you the price for your model, and fit it.</p>
+    <div class="cta-row">${waBtn("Ask for a battery price", "Hi Daksha Systems, please share the battery replacement price for my laptop: ")}<a class="btn ghost dark-ink" href="/services/laptop-battery-replacement/">About battery replacement</a></div>
+  </div>
+  <div>
+    <span class="kicker">Make it last</span>
+    <h2>Battery care that works</h2>
+    <ul class="checks">
+      <li>Unplug at around 80% when you can, and don't run it down to 0% often</li>
+      <li>Keep the laptop cool: use it on a table, not a bed or pillow</li>
+      <li>Turn on your maker's battery-saver or "conservation" charging mode if it has one</li>
+      <li>For long storage, leave the battery at about half charge</li>
+    </ul>
+  </div>
+</div></section>
+${cta("Laptop slow, not charging or shutting down? We'll find out why.")}
+<script src="/assets/battery.js?v=${require("./layout").ver("battery.js")}" defer></script>`,
+  };
+}
+
+const index = () => ({
+  path: "/tools/",
+  title: "Free Computer Tools",
+  description: `Free tools from ${S.brand}, ${S.address.city}: check your laptop battery health in your browser, with nothing to install and nothing uploaded.`,
+  body: `${phead("/tools/", "Free tools", "Small, honest tools for common computer questions. They run in your browser, and nothing you check is uploaded.")}
+<section><div class="wrap"><div class="keys">${list.map((t) => `
+  <a class="key" href="${t.path}">
+    <span class="cap">FREE</span>
+    <div class="ic">${BATTERY_IC}</div>
+    <h2>${esc(t.name)}</h2>
+    <p>${esc(t.card)}</p>
+    <span class="more">Open →</span>
+  </a>`).join("")}</div></div></section>
+${cta()}`,
+});
+
+module.exports = { list, battery, index, BATTERY_IC };

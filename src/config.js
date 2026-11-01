@@ -35,7 +35,7 @@ module.exports = {
   hours: "[Business hours, e.g. Monday – Saturday, 10 AM – 7 PM]",
   openingHours: null,                          // for Google, once hours are known, e.g. ["Mo-Sa 10:00-19:00"]
   payment: ["Cash", "UPI", "Bank transfer", "Online payment"],   // matches the pricing page
-  areaServed: ["Samastipur", "Bihar"],          // add nearby towns you actually serve
+  areaServed: ["Rosera", "Samastipur", "Bihar"], // add nearby towns you actually serve
 
   grievance: { name: "[Grievance officer name]", email: "[grievance email]" },
 
@@ -45,7 +45,7 @@ module.exports = {
      so fill in at least a "starting from" figure for each line you will collect payment for online. */
   pricing: [
     { group: "Software", items: [
-      { name: "Daksh billing software — licence (one shop, one computer)", price: null, unit: "one-time" },
+      { name: "Daksha billing software — licence (one shop, one computer)", price: null, unit: "one-time" },
       { name: "Additional computer licence", price: null, unit: "one-time" },
       { name: "School / coaching management software", price: null, unit: "one-time / per year" },
       { name: "Custom software or new module", price: null, unit: "per project" },

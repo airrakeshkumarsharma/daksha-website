@@ -4,6 +4,7 @@
 const { url, real, S } = require("./layout");
 const PRODUCTS = require("./products");
 const { list: SERVICES } = require("./services");
+const TOOLS = require("./tools").list;
 
 const addr = S.address;
 const address = [addr.street, addr.locality, addr.city, `${addr.state} ${addr.pin}`, "India"].join(", ");
@@ -42,6 +43,10 @@ ${PRODUCTS.categories.map(cat).join("\n")}
 ## Services
 
 ${SERVICES.map((s) => `- [${s.short}](${url(`/services/${s.slug}/`)}): ${s.description}`).join("\n")}
+
+## Free tools
+
+${TOOLS.map((t) => `- [${t.name}](${url(t.path)}): ${t.card} Runs in the browser; nothing is uploaded.`).join("\n")}
 
 ## Policies
 

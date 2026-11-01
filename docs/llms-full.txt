@@ -8,7 +8,7 @@ Source: https://dakshasystems.com/
 
 > daksha build --for your-shop
 
-# Computers, CCTV & software for businesses that can't stop.
+# Computer shop in Rosera, Samastipur: Computers, CCTV & software for businesses that can't stop.
 
 Keyboards, mice and accessories off the shelf, CCTV cameras installed and on your phone, computers repaired, and billing software on the counter — one local team in Samastipur that picks up the phone.
 
@@ -104,13 +104,21 @@ Explore →
 
 F7
 
+### Laptop battery replacement
+
+Battery health check, a battery for your exact model, and fitting at our shop.
+
+Explore →
+
+F8
+
 ### Google & social marketing
 
 Google Business Profile, Maps, social media pages and local promotion.
 
 Explore →
 
-F8
+F9
 
 ### Products & accessories
 
@@ -152,7 +160,7 @@ HIDDEN COSTS₹0
 
 Our product
 
-## Daksh billing software. Built for the counter, not the cloud.
+## Daksha billing software. Built for the counter, not the cloud.
 
 GST invoices, estimates, stock, service jobs and customer khata — on your own computer. No monthly rent. If the internet goes, billing doesn't.
 
@@ -203,7 +211,7 @@ FAQ
 ## Questions people ask us
 
 **Where are you located?**
-We are in Samastipur, Bihar. See the contact page for the full address and directions.
+Our shop is on Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, in Samastipur district, Bihar. See the contact page for directions.
 
 **Do you work only with shops?**
 No. We work with shops, offices, schools, coaching institutes and anyone who needs computers, repairs, software or a website.
@@ -424,13 +432,13 @@ We deliver and install in and around Samastipur. You can also collect from us.
 
 Source: https://dakshasystems.com/services/
 
-# Everything your business runs on.
+# Computer, CCTV & software services, Samastipur: Everything your business runs on.
 
 Pick a key. Each service page lists exactly what's included, and the questions people ask before they call.
 
 F1
 
-### Computer sales & upgrades
+## Computer sales & upgrades
 
 Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
 
@@ -438,7 +446,7 @@ Explore →
 
 F2
 
-### Repair & AMC
+## Repair & AMC
 
 Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
 
@@ -446,7 +454,7 @@ Explore →
 
 F3
 
-### CCTV installation
+## CCTV installation
 
 Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
 
@@ -454,7 +462,7 @@ Explore →
 
 F4
 
-### Billing & stock software
+## Billing & stock software
 
 GST invoices, stock, khata and job cards. Works offline. Your data stays on your computer.
 
@@ -462,7 +470,7 @@ Explore →
 
 F5
 
-### School & coaching software
+## School & coaching software
 
 Admissions, attendance, fees and receipts for schools and coaching institutes.
 
@@ -470,7 +478,7 @@ Explore →
 
 F6
 
-### Websites & e-commerce
+## Websites & e-commerce
 
 Business websites, product catalogues and online stores with payment setup.
 
@@ -478,15 +486,23 @@ Explore →
 
 F7
 
-### Google & social marketing
+## Laptop battery replacement
 
-Google Business Profile, Maps, social media pages and local promotion.
+Battery health check, a battery for your exact model, and fitting at our shop.
 
 Explore →
 
 F8
 
-### Products & accessories
+## Google & social marketing
+
+Google Business Profile, Maps, social media pages and local promotion.
+
+Explore →
+
+F9
+
+## Products & accessories
 
 Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp.
 
@@ -528,7 +544,7 @@ HIDDEN COSTS₹0
 
 Source: https://dakshasystems.com/services/computer-sales/
 
-# Computers that fit the job, not the showroom.
+# Computer & laptop shop, Samastipur: Computers that fit the job, not the showroom.
 
 We help shops, offices, schools and coaching centres buy the right desktop, laptop or printer — then install, set up and stand behind it.
 
@@ -620,7 +636,7 @@ Explore →
 
 Source: https://dakshasystems.com/services/repair-amc/
 
-# Repair today. Fewer breakdowns tomorrow.
+# Computer, laptop & printer repair, Samastipur: Repair today. Fewer breakdowns tomorrow.
 
 Diagnosis, repair and preventive maintenance for desktops, laptops and printers — at your counter, office or computer lab.
 
@@ -632,7 +648,8 @@ What's included
 - Slow computer, won't start, blue screen, overheating, noisy fan
 - Virus and malware removal, Windows reinstall, driver fixes
 - Hard disk / SSD replacement and data copy where the drive is readable
-- Printer, network and Wi-Fi problems
+- Printer repair: not printing, paper jams, cartridge and driver problems
+- Network and Wi-Fi problems
 - AMC: scheduled check-ups, priority visits and a service record per machine
 
 FAQ
@@ -644,6 +661,9 @@ Yes. We diagnose first and give you an estimate. Paid work starts only after you
 
 **Can you recover data from a dead hard disk?**
 If the drive still reads, we copy your data before working on it. Lab-grade recovery from physically damaged drives is not something we do in-house; we will tell you honestly when a drive needs a specialist.
+
+**Do you repair printers?**
+Yes. We fix common printer problems such as not printing, paper jams, faded prints, cartridge or ink errors and driver issues, and set printers up on your computer or network. If a printer isn't worth repairing, we'll tell you.
 
 **What does an AMC cover?**
 Routine maintenance visits, priority response and labour for covered machines. Spare parts are billed separately unless the contract says otherwise. Exact scope is written in your AMC agreement.
@@ -682,7 +702,7 @@ Explore →
 
 Source: https://dakshasystems.com/services/cctv-installation/
 
-# See your shop from your phone — day and night.
+# CCTV camera installation, Samastipur: See your shop from your phone — day and night.
 
 We plan, supply and install CCTV for shops, homes, offices, schools and coaching centres, then set it up so you can watch live and recorded video on your mobile.
 
@@ -712,6 +732,9 @@ Only if the recorder and cameras have backup power. We recommend connecting them
 
 **Do you keep access to my cameras?**
 No. We set the passwords during installation and hand them over to you. Change them whenever you like; we only need access if you ask us for support.
+
+**Do you install CCTV and Wi-Fi cameras for homes?**
+Yes. For a small home, one or two Wi-Fi cameras that record to a memory card can be enough. For more cameras, outdoor areas or longer recording, a wired kit with a recorder is more reliable. We suggest what fits after seeing the place.
 
 **What about privacy?**
 Cameras should cover your own premises. We won't point cameras into a neighbour's property or a private area such as a washroom.
@@ -780,7 +803,7 @@ Explore →
 
 Source: https://dakshasystems.com/services/billing-software/
 
-# Billing software that works even when the internet doesn't.
+# GST billing & khata software for shops: Billing software that works even when the internet doesn't.
 
 GST invoices, estimates, stock, customer khata and service jobs — on your own computer, with backups that look after themselves.
 
@@ -845,7 +868,7 @@ Explore →
 
 Source: https://dakshasystems.com/services/school-coaching-software/
 
-# Fees, attendance and admissions — off paper, in one place.
+# School & coaching management software: Fees, attendance and admissions — off paper, in one place.
 
 Software for schools and coaching institutes that the office staff can actually use, set up and supported by people you can call.
 
@@ -907,7 +930,7 @@ Explore →
 
 Source: https://dakshasystems.com/services/websites-ecommerce/
 
-# A website that brings customers, not just a link in your bio.
+# Website design & e-commerce websites: A website that brings customers, not just a link in your bio.
 
 Business websites, product catalogues and online stores — fast, mobile-first, search-friendly, and yours to keep.
 
@@ -967,9 +990,79 @@ Explore →
 
 ---
 
+Source: https://dakshasystems.com/services/laptop-battery-replacement/
+
+# Laptop battery replacement, Samastipur: Laptop battery not lasting? We'll check it, then replace it.
+
+We test your battery first, give you the price for a battery that fits your exact model, and fit it for you.
+
+What's included
+
+## Laptop battery replacement
+
+- Battery health check from the laptop's own battery report, before you pay for anything
+- A battery matched to your laptop's model and battery part number
+- The quote says whether the battery is the brand's original or a compatible one
+- Fitting at the shop, including laptops whose battery is inside the case
+- Charger and charging-port check if the laptop isn't charging at all
+- Warranty on the battery as written on your invoice
+
+Want to know first? Check your battery health yourself in two minutes. Free laptop battery health check →
+
+FAQ
+
+## Good questions
+
+**How do I know my laptop battery needs replacing?**
+Backup has dropped a lot, the laptop switches off before 0%, or it only works when plugged in. Our free battery health check on this website gives you the exact percentage: below 60% usually means it's time.
+
+**How much does a laptop battery cost?**
+It depends on the brand, model and whether you choose an original or compatible battery. Send us your laptop's model number on WhatsApp and we'll reply with the price and availability.
+
+**Where do I find my laptop's model number?**
+On the sticker under the laptop, or in Windows: press the Windows key, type System Information, and look for System Model.
+
+**My laptop works only when plugged in. Is it the battery?**
+Usually, but not always. A faulty charger or charging port can look the same. We check all three before suggesting a new battery.
+
+**My battery is swollen. What should I do?**
+Stop using the laptop on battery, don't press on the case, and bring it in. A swollen battery should be replaced, not charged.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
 Source: https://dakshasystems.com/services/digital-marketing/
 
-# Get found by people already looking for you.
+# Google Business Profile & social media marketing: Get found by people already looking for you.
 
 Local marketing that starts where your customers search: Google Maps, Google Search, WhatsApp and social media.
 
@@ -1028,7 +1121,7 @@ Explore →
 
 Source: https://dakshasystems.com/software/
 
-# Daksh billing software
+# Daksha billing software
 
 GST billing, stock, service jobs and customer khata for your counter. Runs on your computer. Keeps working when the internet doesn't.
 
@@ -1100,6 +1193,176 @@ No. Your bills, customers and stock are stored on your computer. If you switch o
 Yes. Restore a backup on the new computer. The licence is tied to a computer, so contact us to move it.
 
 ## Want a demo on your own counter? We'll install the trial for you.
+
+---
+
+Source: https://dakshasystems.com/tools/
+
+# Free tools
+
+Small, honest tools for common computer questions. They run in your browser, and nothing you check is uploaded.
+
+FREE
+
+## Laptop battery health check
+
+Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings.
+
+Open →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
+Source: https://dakshasystems.com/tools/laptop-battery-health-check/
+
+# How to check laptop battery health
+
+- Open Command Prompt and paste this. Press the Windows key, type cmd and press Enter. Paste this line with Ctrl + V and press Enter.
+powercfg /batteryreport && battery-report.html
+
+This is Windows' own battery report. It opens in your browser. Nothing is installed.
+
+- Copy the report and paste it here. On the report, press Ctrl + A, then Ctrl + C. Come back to this page and paste below.
+
+**Other way: use the battery report file**
+
+- Open Command Prompt. Press the Windows key, type cmd and press Enter.
+
+- Type powercfg /batteryreport and press Enter. Windows saves battery-report.html, usually in C:\Users\your-name.
+
+- Drop that file here.
+
+battery-report.html
+Drag it here, or tap to choose the file
+
+- Battery health %: Apple menu → System Settings → Battery → click ⓘ next to Battery Health. Note the Maximum Capacity.
+
+- Cycle count: Apple menu → System Settings → General → About → System Report → Power. Find Cycle Count.
+
+- Enter them below: Maximum Capacity in Holds now, and 100 in When new.
+
+This check runs on the laptop. Send this page to yourself and open it on the laptop you want to check.
+
+**Type the numbers yourself**
+
+When new
+Holds now
+Cycle count (optional)
+
+Everything is checked inside your browser. Nothing is uploaded.
+
+battery health
+
+##
+
+When new
+
+Holds now
+
+Charge cycles
+
+Capacity lost
+
+Windows' backup estimate
+
+A reading slightly over 100% is normal on a new battery. The battery's own gauge estimates the charge, and the estimate can drift.
+
+This laptop has more than one battery. The numbers above are for all batteries together.
+
+Battery replacement in Samastipur →
+
+Quick answer
+Battery health = full charge capacity ÷ design capacity × 100. On Windows, open Command Prompt, run powercfg /batteryreport, and compare the two capacity numbers in the report it saves. 80% or more is healthy, 60–79% means plan a replacement, and below 60% means replace soon.
+
+By Daksha Systems, Samastipur · Updated 1 November 2026
+
+## How to check laptop battery health in Windows 11 and 10 (cmd)
+
+- Press the Windows key, type cmd and press Enter to open Command Prompt.
+
+- Type powercfg /batteryreport and press Enter. Windows saves battery-report.html and prints where.
+
+- Open that file in your browser and scroll to Installed batteries.
+
+- Divide Full Charge Capacity by Design Capacity and multiply by 100. That's your battery health.
+
+- Or skip the report: use the copy-and-paste checker above and it does the maths for you.
+
+The command works the same on HP, Dell, Lenovo, Asus, Acer and every other Windows laptop. You don't need to run Command Prompt as administrator. If you use PowerShell instead, the same command works there too.
+
+## How to read your battery report
+
+The report is long, but three lines under Installed batteries are what matter.
+
+In the report | What it means
+
+Design capacity | How much charge the battery held when it was new, in milliwatt-hours (mWh).
+
+Full charge capacity | How much it holds today. Divide by design capacity to get health %.
+
+Cycle count | Full charge-and-discharge cycles so far. Some laptops leave it blank or show "-".
+
+Further down, Battery life estimates shows how long Windows thinks the battery lasts now, compared with when it was new. It's based on how you've used the laptop, so it changes with screen brightness and workload.
+
+## What is a good laptop battery health percentage?
+
+Battery health | What to do
+
+80–100% | Healthy. Nothing to do.
+
+60–79% | Works, with shorter backup. Plan a replacement when it starts to bother you.
+
+Below 60% | Replace soon. Backup is short and the laptop may switch off suddenly at low charge.
+
+A swollen battery, a lifted touchpad or a bulging case is a different matter: stop using the laptop on battery and get it checked straight away, whatever the percentage.
+
+## How to check battery health on a MacBook
+
+Open the Apple menu → System Settings → Battery, then click ⓘ next to Battery Health. Maximum Capacity is your battery health. For the cycle count, go to Apple menu → System Settings → General → About → System Report → Power. Apple rates current MacBook batteries for 1,000 cycles.
+
+## Questions people ask
+
+**Is it safe to use my battery report here?**
+Yes. Your browser reads the file on your own laptop. It is never uploaded, and the page has no sign-up or tracking form. The report lists your laptop's model and battery history, nothing personal like files or passwords.
+
+**Is 80% battery health good?**
+Yes. At 80% or more the battery still holds most of its original charge, and 80% is the level most makers treat as the end of a healthy battery's rated life. Between 60% and 79% it still works, with clearly shorter backup.
+
+**What does "No batteries are currently installed" in the battery report mean?**
+Windows can't see a battery. That's normal on a desktop. On a laptop it usually means the battery is dead, disconnected inside, or not being detected, and it needs a check or a replacement.
+
+**Why does my report show a cycle count of "-"?**
+Some laptops don't pass the cycle count to Windows. The health percentage is still correct, because it comes from the two capacity numbers, not the cycle count.
+
+**How many charge cycles is too many?**
+It depends on the battery. Apple rates current MacBook batteries for 1,000 cycles; many Windows laptop batteries are rated for a few hundred to 1,000. The health percentage tells you more than the cycle count alone.
+
+**Does this work on HP, Dell, Lenovo, Asus and Acer laptops?**
+Yes. Every Windows 10 and Windows 11 laptop can create the battery report with the same command, whatever the brand.
+
+**Can I check battery health without the command?**
+On Windows, the battery report is the built-in way. Some makers also show health in their own apps, such as Lenovo Vantage, Dell Power Manager or HP Support Assistant. On a MacBook it's in System Settings, no command needed.
+
+Need a new battery?
+
+## Laptop battery replacement in Samastipur
+
+Bring your laptop to Daksha Systems on Rosera – Hathori Kothi Road, or send us the model on WhatsApp. We check the battery, tell you the price for your model, and fit it.
+
+Make it last
+
+## Battery care that works
+
+- Unplug at around 80% when you can, and don't run it down to 0% often
+
+- Keep the laptop cool: use it on a table, not a bed or pillow
+
+- Turn on your maker's battery-saver or "conservation" charging mode if it has one
+
+- For long storage, leave the battery at about half charge
+
+## Laptop slow, not charging or shutting down? We'll find out why.
 
 ---
 
@@ -1179,7 +1442,7 @@ Clear prices for standard work. Custom jobs get a written quote before anything 
 
 ## Software
 
-Daksh billing software — licence (one shop, one computer)one-timeQuote on request
+Daksha billing software — licence (one shop, one computer)one-timeQuote on request
 Additional computer licenceone-timeQuote on request
 School / coaching management softwareone-time / per yearQuote on request
 Custom software or new moduleper projectQuote on request
@@ -1262,12 +1525,12 @@ Source: https://dakshasystems.com/contact/
 
 WhatsApp is fastest. Calls are answered during business hours. You're welcome to visit.
 
-### WhatsApp
+## WhatsApp
 
 +91 70758 59034
 Send photos of the problem or details of what you need.
 
-### Call
+## Call
 
 +91 70758 59034
 Calls are answered during business hours.
@@ -1294,12 +1557,12 @@ Source: https://dakshasystems.com/privacy-policy/
 
 What we collect, why, where it is stored, who it is shared with, and the rights you have over it.
 
-On this pageWho we areInformation we collectPaymentsDaksh Systems desktop softwareHow we use informationSharingCookies and analyticsStorage, security and retentionYour rightsChildrenGrievance officerChanges to this policy
+On this pageWho we areInformation we collectPaymentsDaksha Systems desktop softwareHow we use informationSharingCookies and analyticsStorage, security and retentionYour rightsChildrenGrievance officerChanges to this policy
 Last updated: 19 October 2026
 
 ## Who we are
 
-This policy is published by Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India ("Daksha Systems", "we", "us"). It covers this website (dakshasystems.com), the services we provide in person and online, payments made to us, and the Daksh Systems desktop software we publish.
+This policy is published by Neelam Devi (sole proprietor), trading as Daksha Systems (GST trade name: DAKSHA SYSTEM), GSTIN 10GPXPD6272M1ZC, Rosera – Hathori Kothi Road, near Durga Sthan, Mananpur, Saduka, Samastipur, Bihar 848117, India ("Daksha Systems", "we", "us"). It covers this website (dakshasystems.com), the services we provide in person and online, payments made to us, and the Daksha Systems desktop software we publish.
 
 We follow the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, and the Digital Personal Data Protection Act, 2023 to the extent in force. For the purposes of these laws, Daksha Systems is the Data Fiduciary for the personal data described here.
 
@@ -1327,9 +1590,9 @@ We never ask for or store your card numbers, CVV, UPI PIN, net-banking passwords
 
 Online payments are processed by a licensed third-party payment gateway (for example Razorpay, Cashfree, PayU or PhonePe, as shown at checkout). Card, UPI and bank details are collected and processed by the gateway under its own privacy policy and PCI-DSS obligations. We receive only the information needed to confirm your payment, such as the transaction ID, amount, status and the contact details you entered.
 
-## Daksh Systems desktop software
+## Daksha Systems desktop software
 
-The Daksh billing software is local-first. Your bills, customers, stock, payments and settings are stored in a database on your own computer (or pen drive in the portable edition), and in backup folders you choose. This data is not sent to Daksha Systems.
+The Daksha billing software is local-first. Your bills, customers, stock, payments and settings are stored in a database on your own computer (or pen drive in the portable edition), and in backup folders you choose. This data is not sent to Daksha Systems.
 
 The licence check works offline. To activate, the app shows an install code; you send it to us and we send back an activation code. We keep a record of install codes and the licences issued.
 
@@ -1490,7 +1753,7 @@ New hardware carries the manufacturer's warranty, honoured by the manufacturer o
 
 ## Software licences
 
-- Daksh Systems software is licensed, not sold. A licence lets you use the software on the computer it is activated on, for your own business.
+- Daksha Systems software is licensed, not sold. A licence lets you use the software on the computer it is activated on, for your own business.
 
 - You may not copy, resell, reverse-engineer, or share activation codes.
 
