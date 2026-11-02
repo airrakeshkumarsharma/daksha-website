@@ -112,19 +112,49 @@ Explore →
 
 F8
 
+### Mobile battery replacement
+
+Battery check, a price for your phone's model, and replacement at our shop.
+
+Explore →
+
+F9
+
 ### Google & social marketing
 
 Google Business Profile, Maps, social media pages and local promotion.
 
 Explore →
 
-F9
+F10
 
 ### Products & accessories
 
 Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp.
 
 Explore →
+
+Free tools
+
+## Is your battery still good? Check it free.
+
+Two small checks that run in your browser. Nothing to install, nothing uploaded.
+
+FREE
+
+### Laptop battery health check
+
+Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings.
+
+Open →
+
+FREE
+
+### Mobile battery health check
+
+Find your phone's battery health in Settings, then find out if it's good or needs replacing. Works for iPhone, Samsung, Pixel, Realme and other Android phones.
+
+Open →
 
 Clear scope
 
@@ -494,13 +524,21 @@ Explore →
 
 F8
 
+## Mobile battery replacement
+
+Battery check, a price for your phone's model, and replacement at our shop.
+
+Explore →
+
+F9
+
 ## Google & social marketing
 
 Google Business Profile, Maps, social media pages and local promotion.
 
 Explore →
 
-F9
+F10
 
 ## Products & accessories
 
@@ -651,6 +689,8 @@ What's included
 - Printer repair: not printing, paper jams, cartridge and driver problems
 - Network and Wi-Fi problems
 - AMC: scheduled check-ups, priority visits and a service record per machine
+
+Laptop not holding its charge? Check the battery's health yourself first. Free laptop battery health check →
 
 FAQ
 
@@ -1060,6 +1100,76 @@ Explore →
 
 ---
 
+Source: https://dakshasystems.com/services/mobile-battery-replacement/
+
+# Mobile battery replacement, Samastipur: Phone not lasting the day? We'll check the battery, then replace it.
+
+Bring your phone to the shop or send us the model on WhatsApp. We check the battery, tell you the price for your model, and replace it at the shop.
+
+What's included
+
+## Mobile battery replacement
+
+- A battery check before you pay for anything
+- A price for your phone's exact brand and model
+- The quote says whether the battery is the brand's original or a compatible one
+- Replacement at the shop
+- Swollen batteries taken out safely
+- Warranty on the battery as written on your invoice
+
+Want to know first? Check your phone's battery health yourself. Free mobile battery health check →
+
+FAQ
+
+## Good questions
+
+**How do I know my phone battery needs replacing?**
+The phone switches off while it still shows charge, no longer lasts a day, or Settings shows battery health below 80%. A lifting back cover or screen means a swollen battery: stop charging it and bring it in. Our free mobile battery health check on this website helps you decide.
+
+**How much does a mobile battery replacement cost?**
+It depends on the brand, the model and whether you choose an original or compatible battery. Send us your phone's brand and model on WhatsApp and we'll reply with the price and availability.
+
+**Where do I find my phone's model?**
+Open Settings → About phone. The model name or number is shown there. On an iPhone it's Settings → General → About.
+
+**Mobile battery kahan badalwayein?**
+Daksha Systems, Rosera – Hathori Kothi Road, Samastipur. Phone ka brand aur model WhatsApp par bhejiye, hum price bata denge.
+
+**My battery is swollen. What should I do?**
+Stop charging the phone, don't press on it, and keep it away from your bed and pillow. Bring it to the shop and we'll remove the battery safely.
+
+Other services
+
+## Often needed together
+
+F1
+
+### Computer sales & upgrades
+
+Desktops, laptops, printers, UPS and upgrades — picked for your work, installed and set up.
+
+Explore →
+
+F2
+
+### Repair & AMC
+
+Diagnosis, repair, virus clean-up and Annual Maintenance Contracts for offices and labs.
+
+Explore →
+
+F3
+
+### CCTV installation
+
+Cameras, recorder, wiring and mobile viewing — planned, supplied and installed by us.
+
+Explore →
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
+
+---
+
 Source: https://dakshasystems.com/services/digital-marketing/
 
 # Google Business Profile & social media marketing: Get found by people already looking for you.
@@ -1264,8 +1374,6 @@ Everything is checked inside your browser. Nothing is uploaded.
 
 battery health
 
-##
-
 When new
 
 Holds now
@@ -1413,9 +1521,7 @@ Everything is checked inside your browser. Nothing is uploaded.
 
 battery health
 
-##
-
-Visit the shop in Samastipur →
+Mobile battery replacement in Samastipur →
 
 Quick answer
 Open Settings → Battery and look for Battery health or Maximum capacity. On an iPhone it's Settings → Battery → Battery Health. 85% or more is healthy, 80–84% is getting weak, and below 80% means replace the battery soon. A swollen battery needs replacing straight away, whatever the %.

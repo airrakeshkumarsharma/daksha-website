@@ -44,13 +44,12 @@ const POLICIES = [
 /* Pages that aren't in the header but still need a breadcrumb name. */
 const OTHER_PAGES = [["/what-we-do/", "What we do"], ["/tools/", "Free tools"], ["/tools/laptop-battery-health-check/", "Laptop battery health check"], ["/tools/phone-battery-health-check/", "Mobile battery health check"]];
 
-/* Products and services as an OfferCatalog, so search engines and AI agents can see what is sold. */
+/* Products and services as an OfferCatalog, so search engines and AI agents can see what is sold.
+   Product categories only: unpriced Product items fail Google's Product snippet check on every page. */
 function catalog() {
   const P = require("./products");
   return { "@type": "OfferCatalog", name: `${S.brand} products and services`, itemListElement: [
-    ...P.categories.map((c) => ({ "@type": "OfferCatalog", name: c.name, description: c.blurb, url: url(`/products/#${c.id}`),
-      itemListElement: P.items.filter((i) => i.cat === c.id).map((i) => ({ "@type": "Offer", priceCurrency: "INR",
-        itemOffered: { "@type": "Product", name: i.name, description: i.desc, image: url(`/assets/img/products/${i.img}.jpg`) } })) })),
+    ...P.categories.map((c) => ({ "@type": "OfferCatalog", name: c.name, description: c.blurb, url: url(`/products/#${c.id}`) })),
     { "@type": "OfferCatalog", name: "Services", itemListElement: SERVICES.map((s) => ({ "@type": "Offer",
       itemOffered: { "@type": "Service", name: s.short, description: s.description, url: url(`/services/${s.slug}/`) } })) },
   ] };
@@ -171,7 +170,7 @@ const footer = () => `
       <div><h4>Company</h4><ul>
         <li><a href="/products/">Products &amp; accessories</a></li>
         <li><a href="/about/">About us</a></li><li><a href="/what-we-do/">What we do &amp; don't</a></li>
-        <li><a href="/software/">Daksha billing software</a></li><li><a href="/tools/">Free tools</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+        <li><a href="/software/">Daksha billing software</a></li><li><a href="/tools/">Free tools</a></li>${require("./tools").list.map((t) => `<li><a href="${t.path}">${esc(t.name)}</a></li>`).join("")}<li><a href="/pricing/">Pricing</a></li><li><a href="/contact/">Contact</a></li></ul></div>
       <div><h4>Reach us</h4>
         <address>${esc(S.brand)}<br>${esc(addrLine)}<br>
         <a href="tel:${S.phoneE164}">${esc(S.phone)}</a>${real(S.email) ? `<br><a href="mailto:${esc(S.email)}">${esc(S.email)}</a>` : ""}${real(S.hours) ? `<br>${esc(S.hours)}` : ""}</address></div>

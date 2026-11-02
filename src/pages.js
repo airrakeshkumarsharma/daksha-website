@@ -15,13 +15,13 @@ const faqSchema = (faq) => ({ "@type": "FAQPage", mainEntity: faq.map(([q, a]) =
 const faqHtml = (faq) => `<div class="faq">${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>`;
 
 const SHOP_ICON = `<svg viewBox="0 0 64 64" fill="none" stroke="#EBB909" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="30" width="34" height="18" rx="3"/><path d="M12 36h4M20 36h4M28 36h4M12 42h20"/><path d="M48 18c6 0 9 4 9 10v10a9 9 0 0 1-18 0V28c0-6 3-10 9-10zM48 18v10"/></svg>`;
-const SHOP_KEY = { href: "/products/", key: "F9", ic: SHOP_ICON, short: "Products & accessories", card: "Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp." };
-/* `withShop` adds the products key; 8 keys sit in a 4-column grid, 9 in three rows of three.
+const SHOP_KEY = { href: "/products/", key: "F10", ic: SHOP_ICON, short: "Products & accessories", card: "Keyboards, mice, storage, networking, printers and more — ask for price on WhatsApp." };
+/* `withShop` adds the products key; 8 keys sit in a 4-column grid, 9 in three rows of three, 10 in two rows of five.
    `hl` is the card heading level: 2 when the grid follows the H1 directly. */
 const keys = (items = SERVICES, withShop = false, hl = 3) => {
   const all = items.map((s) => ({ href: `/services/${s.slug}/`, key: s.key, ic: ICONS[s.icon], short: s.short, card: s.card }));
   if (withShop) all.push(SHOP_KEY);
-  return `<div class="keys${all.length === 8 ? " k4" : ""}">${all.map((s, i) => `
+  return `<div class="keys${all.length === 8 ? " k4" : all.length === 10 ? " k5" : ""}">${all.map((s, i) => `
   <a class="key reveal${i === 2 ? " hl" : ""}" href="${s.href}">
     <span class="cap">${s.key}</span>
     <div class="ic">${s.ic}</div>
@@ -57,7 +57,7 @@ const productGrid = (items) => `<div class="pgrid">${items.map(productCard).join
 const catTiles = () => `<div class="ctiles">${PRODUCTS.categories.map((c) => {
   const its = PRODUCTS.items.filter((i) => i.cat === c.id);
   return `<a class="ctile reveal" href="/products/#${c.id}">
-    <img src="/assets/img/products/${its[0].img}.jpg" width="720" height="540" loading="lazy" decoding="async" alt="">
+    <img src="/assets/img/products/${its[0].img}.jpg" width="720" height="540" loading="lazy" decoding="async" alt="${esc(its[0].name)}">
     <span><b>${esc(c.name)}</b><small>${esc(c.blurb)}</small><i>${its.length} item${its.length === 1 ? "" : "s"} →</i></span>
   </a>`; }).join("")}</div>`;
 
@@ -178,6 +178,21 @@ const home = () => ({
     <div class="sec-head"><span class="kicker">Services</span><h2 id="svc">Every key your business needs.</h2>
       <p>Hardware, CCTV, software and the internet — handled by the same people, so nothing falls between vendors.</p></div>
     ${keys(SERVICES, true)}
+  </div>
+</section>
+
+<section aria-labelledby="tools">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">Free tools</span><h2 id="tools">Is your battery still good? Check it free.</h2>
+      <p>Two small checks that run in your browser. Nothing to install, nothing uploaded.</p></div>
+    <div class="keys k2">${require("./tools").list.map((t, i) => `
+      <a class="key reveal" href="${t.path}">
+        <span class="cap">FREE</span>
+        <div class="ic">${ICONS[i ? "phone" : "battery"]}</div>
+        <h3>${esc(t.name)}</h3>
+        <p>${esc(t.card)}</p>
+        <span class="more">Open →</span>
+      </a>`).join("")}</div>
   </div>
 </section>
 
@@ -302,7 +317,7 @@ const SW_FAQ = [
 ];
 const software = () => ({
   path: "/software/",
-  title: "Daksha Billing Software: Offline GST & Khata",
+  title: "Daksha Billing Software (Offline GST)",
   description: "Daksha billing software: offline GST billing, stock, service jobs and customer khata for Indian shops. No monthly fee, automatic backups.",
   type: "product",
   schema: [{ "@type": "SoftwareApplication", name: "Daksha Systems billing software", applicationCategory: "BusinessApplication",

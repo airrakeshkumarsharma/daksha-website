@@ -2,6 +2,7 @@
    llms-full.txt read them); the interactive part is a small script in docs/assets/. */
 const { esc, url, S, WA_ICON } = require("./layout");
 const { phead, cta, faqSchema, faqHtml, waBtn } = require("./pages");
+const { ICONS } = require("./services");
 
 const UPDATED = { iso: "2026-11-01", text: "1 November 2026" };
 const PHONE_UPDATED = { iso: "2026-11-02", text: "2 November 2026" };
@@ -111,7 +112,7 @@ function battery() {
       <div class="bt-ring"><span><b id="bt-pct"></b><small>battery health</small></span></div>
       <div class="bt-out">
         <small id="bt-source"></small>
-        <h2 id="bt-verdict"></h2>
+        <p class="bt-h" id="bt-verdict"></p>
         <p id="bt-meaning"></p>
         <dl class="bt-facts">
           <div><dt>When new</dt><dd id="bt-new"></dd></div>
@@ -227,7 +228,7 @@ function phoneBattery() {
   const shopWa = `https://wa.me/${S.whatsapp}?text=`;
   return {
     path: p,
-    title: "Mobile Battery Health Check: Good or Replace?",
+    title: "Mobile Battery Health Check: Good or Bad?",
     description: "Free mobile battery health check: where to find battery health on iPhone, Samsung, Pixel and Realme, and whether your % is good or needs a new battery.",
     schema: [
       { "@type": "WebApplication", name: "Mobile battery health check", url: url(p), applicationCategory: "UtilitiesApplication",
@@ -271,12 +272,12 @@ function phoneBattery() {
       <div class="bt-ring"><span><b id="pb-ring"></b><small id="pb-ring-label">battery health</small></span></div>
       <div class="bt-out">
         <small id="pb-source"></small>
-        <h2 id="pb-verdict"></h2>
+        <p class="bt-h" id="pb-verdict"></p>
         <p class="pb-hing" id="pb-hing"></p>
         <p id="pb-meaning"></p>
         <div id="pb-cta" class="bt-cta" hidden>
           <a class="btn" data-base="${shopWa}" href="${shopWa}" target="_blank" rel="noopener">${WA_ICON}<span>Get it replaced at Daksha Systems</span></a>
-          <a class="bt-link" href="/contact/">Visit the shop in ${esc(S.address.city)} →</a>
+          <a class="bt-link" href="/services/mobile-battery-replacement/">Mobile battery replacement in ${esc(S.address.city)} →</a>
         </div>
         <button type="button" class="bt-link" id="pb-again">Check another phone</button>
       </div>
@@ -329,7 +330,7 @@ function phoneBattery() {
     <span class="kicker">Need a new battery?</span>
     <h2>Mobile battery replacement in ${esc(S.address.city)}</h2>
     <p>Bring your phone to ${esc(S.brand)} on Rosera – Hathori Kothi Road, or send us the brand and model on WhatsApp. We'll tell you the price and when it can be done, and replace the battery at the shop.</p>
-    <div class="cta-row">${waBtn("Ask for a battery price", "Hi Daksha Systems, please share the battery replacement price for my phone. Brand and model: ")}<a class="btn ghost dark-ink" href="/contact/">Find the shop</a></div>
+    <div class="cta-row">${waBtn("Ask for a battery price", "Hi Daksha Systems, please share the battery replacement price for my phone. Brand and model: ")}<a class="btn ghost dark-ink" href="/services/mobile-battery-replacement/">About battery replacement</a></div>
   </div>
   <div>
     <span class="kicker">Make it last</span>
@@ -355,7 +356,7 @@ const index = () => ({
 <section><div class="wrap"><div class="keys">${list.map((t) => `
   <a class="key" href="${t.path}">
     <span class="cap">FREE</span>
-    <div class="ic">${BATTERY_IC}</div>
+    <div class="ic">${t.path.includes("phone") ? ICONS.phone : BATTERY_IC}</div>
     <h2>${esc(t.name)}</h2>
     <p>${esc(t.card)}</p>
     <span class="more">Open →</span>
