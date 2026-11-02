@@ -10,7 +10,7 @@ const LLMS = require("./src/llms");
 const T = require("./src/tools");
 
 const OUT = path.join(__dirname, "docs");
-const pages = [P.home(), P.products(), P.servicesIndex(), ...SERVICES.map(P.servicePage), P.software(), T.index(), T.battery(), P.whatWeDo(), P.pricing(),
+const pages = [P.home(), P.products(), P.servicesIndex(), ...SERVICES.map(P.servicePage), P.software(), T.index(), T.battery(), T.phoneBattery(), P.whatWeDo(), P.pricing(),
   P.about(), P.contact(), L.privacy(), L.terms(), L.refund(), L.shipping(), L.warranty(), P.notFound()];
 
 /* Sitemap <lastmod> is the day a page's own content last changed, kept in src/lastmod.json

@@ -1,9 +1,10 @@
 /* Free tools. Each tool page keeps its steps, tables and FAQ in plain HTML (search engines and
    llms-full.txt read them); the interactive part is a small script in docs/assets/. */
-const { esc, url, S } = require("./layout");
+const { esc, url, S, WA_ICON } = require("./layout");
 const { phead, cta, faqSchema, faqHtml, waBtn } = require("./pages");
 
 const UPDATED = { iso: "2026-11-01", text: "1 November 2026" };
+const PHONE_UPDATED = { iso: "2026-11-02", text: "2 November 2026" };
 const CMD = "powercfg /batteryreport";   // plain form works in both Command Prompt and PowerShell
 /* Main flow: makes the report and opens it in the browser, so nobody has to find the file. Readable
    and Microsoft-documented on purpose; a hidden PowerShell line pasted into Windows+R looks like the
@@ -13,6 +14,8 @@ const QUICK = "powercfg /batteryreport && battery-report.html";
 const list = [
   { path: "/tools/laptop-battery-health-check/", name: "Laptop battery health check",
     card: "Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings." },
+  { path: "/tools/phone-battery-health-check/", name: "Mobile battery health check",
+    card: "Find your phone's battery health in Settings, then find out if it's good or needs replacing. Works for iPhone, Samsung, Pixel, Realme and other Android phones." },
 ];
 
 const BATTERY_FAQ = [
@@ -88,6 +91,7 @@ function battery() {
     <div data-panel="phone" hidden>
       <p class="bt-phone"><b>This check runs on the laptop.</b> Send this page to yourself and open it on the laptop you want to check.</p>
       <a class="btn" id="bt-share" href="${shareWa}" target="_blank" rel="noopener">Send to my WhatsApp</a>
+      <p class="bt-phone-alt"><a class="bt-link dark" href="/tools/phone-battery-health-check/">Checking this phone's battery instead? →</a></p>
     </div>
 
     <details class="bt-manual" id="bt-manual">
@@ -198,10 +202,155 @@ ${cta("Laptop slow, not charging or shutting down? We'll find out why.")}
   };
 }
 
+/* Where each brand shows battery health. Only paths with an official or reliable source; the rest
+   say "varies by model" until they're checked on real phones at the shop. */
+const PHONE_BRANDS = [
+  { id: "iphone", name: "iPhone", where: "Settings → Battery → Battery Health (called Battery Health & Charging on some iOS versions)", shows: "Maximum Capacity, as a %" },
+  { id: "samsung", name: "Samsung Galaxy", where: "Settings → Battery → Battery information, on newer One UI versions such as the Galaxy S25. On other models, open the Samsung Members app and run the battery test in phone diagnostics", shows: "A % on newer models; on others a word such as Normal or Weak" },
+  { id: "pixel", name: "Google Pixel", where: "Settings → Battery → Battery health. Pixel 8a and newer, after the Android 16 update", shows: "Estimated capacity, as a %" },
+  { id: "realme", name: "Realme", where: "Settings → Battery → Battery health → Maximum capacity, on recent models such as the realme 11 Pro+", shows: "Maximum capacity, as a %" },
+  { id: "other", name: "Vivo, Oppo, Redmi, OnePlus or another", where: "Open Settings → Battery and look for Battery health or Battery protection. Many of these phones don't show battery health at all", shows: "Varies by model. If there's no %, use the symptoms below" },
+];
+
+const PHONE_FAQ = [
+  ["Battery health kitna hona chahiye?", "85% ya usse zyada ho to battery sahi hai. 80% se 84% par battery thodi kamzor hai, abhi chal jayegi. 80% se kam ho to battery badalne ka time hai. Battery phooli hui ho to percentage kuch bhi ho, phone turant band kar dein."],
+  ["Is 85% battery health good?", "Yes. At 85% the battery still holds most of its original charge. You'll notice a little less backup than when the phone was new, but there's nothing to do yet."],
+  ["Is 80% battery health good on an iPhone?", "It's the borderline. Apple treats 80% as the point where a battery is worn, and below it the iPhone suggests a service. At 80–84% you can keep using it; plan a replacement when the backup bothers you."],
+  ["Is there a code to check mobile battery health?", "Many lists online give dial codes, but they disagree and none is confirmed by the phone makers. *#*#4636#*#* opens Android's testing menu; what it shows depends on the phone, and on many current phones there is no battery health in it. We don't list codes we haven't tested. If you open an engineering menu, don't change anything in it."],
+  ["My phone doesn't show battery health. How do I check it?", "Many Vivo, Oppo, Redmi and other Android phones don't show it in Settings. Go by the symptoms: if the phone switches off with charge left, can't last a day, or the battery looks swollen, the battery is worn. We can also test it at the shop."],
+  ["Mobile battery jaldi khatam ho rahi hai, kya karein?", "Pehle Settings → Battery mein dekhein kaun sa app sabse zyada battery le raha hai, aur screen brightness kam karein. Battery health 80% se kam ho, ya phone charge hote hue bhi band ho jaye, to battery badalni padegi."],
+  ["Do you replace mobile batteries?", `Yes, at our shop in ${S.address.city}. Send us your phone's brand and model on WhatsApp and we'll reply with the price and when it can be done.`],
+];
+
+function phoneBattery() {
+  const p = list[1].path;
+  const shopWa = `https://wa.me/${S.whatsapp}?text=`;
+  return {
+    path: p,
+    title: "Mobile Battery Health Check: Good or Replace?",
+    description: "Free mobile battery health check: where to find battery health on iPhone, Samsung, Pixel and Realme, and whether your % is good or needs a new battery.",
+    schema: [
+      { "@type": "WebApplication", name: "Mobile battery health check", url: url(p), applicationCategory: "UtilitiesApplication",
+        operatingSystem: "Android, iOS", browserRequirements: "Any modern browser", inLanguage: "en-IN",
+        isAccessibleForFree: true, dateModified: PHONE_UPDATED.iso, offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+        provider: { "@id": url("/#business") } },
+      faqSchema(PHONE_FAQ),
+    ],
+    body: `${phead(p, "Mobile battery health check").replace('class="phead"', 'class="phead slim"')}
+<section class="bt-sec"><div class="wrap">
+  <div class="bt" id="pb">
+    <ol class="bt-steps">
+      <li><b>Find battery health in Settings.</b>
+        <label class="pb-pick">Your phone
+          <select id="pb-brand">
+            <option value="">Choose your phone</option>
+            ${PHONE_BRANDS.map((b) => `<option value="${b.id}">${esc(b.name)}</option>`).join("")}
+          </select>
+        </label>
+        ${PHONE_BRANDS.map((b) => `<p class="pb-where" data-brand="${b.id}"><b>${esc(b.name)}:</b> ${esc(b.where)}.</p>`).join("\n        ")}
+        <small>Battery health is not the charge level at the top of the screen. It's how much the battery holds compared with when it was new.</small></li>
+      <li><b>Type what it shows, and tick anything you've noticed.</b>
+        <form id="pb-form" class="bt-form" novalidate>
+          <label>Battery health %<input id="pb-pct" inputmode="numeric" autocomplete="off" placeholder="e.g. 86"></label>
+          <label class="pb-check"><input type="checkbox" id="pb-none"> My phone doesn't show a %</label>
+          <fieldset class="pb-sym">
+            <legend>Anything else? (optional)</legend>
+            <label class="pb-check"><input type="checkbox" name="sym" value="off"> Switches off while it still shows charge</label>
+            <label class="pb-check"><input type="checkbox" name="sym" value="drain"> Doesn't last a day / drains fast</label>
+            <label class="pb-check"><input type="checkbox" name="sym" value="hot"> Gets hot while charging or in use</label>
+            <label class="pb-check"><input type="checkbox" name="sym" value="swollen"> Back or screen is lifting / battery looks swollen</label>
+          </fieldset>
+          <button class="btn" type="submit">Check my battery</button>
+        </form></li>
+    </ol>
+
+    <p class="bt-error" id="pb-error" role="alert" hidden></p>
+    <p class="bt-private">${ic('<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>')}Everything is checked inside your browser. Nothing is uploaded.</p>
+
+    <div class="bt-result" id="pb-result" tabindex="-1" aria-live="polite" hidden>
+      <div class="bt-ring"><span><b id="pb-ring"></b><small id="pb-ring-label">battery health</small></span></div>
+      <div class="bt-out">
+        <small id="pb-source"></small>
+        <h2 id="pb-verdict"></h2>
+        <p class="pb-hing" id="pb-hing"></p>
+        <p id="pb-meaning"></p>
+        <div id="pb-cta" class="bt-cta" hidden>
+          <a class="btn" data-base="${shopWa}" href="${shopWa}" target="_blank" rel="noopener">${WA_ICON}<span>Get it replaced at Daksha Systems</span></a>
+          <a class="bt-link" href="/contact/">Visit the shop in ${esc(S.address.city)} →</a>
+        </div>
+        <button type="button" class="bt-link" id="pb-again">Check another phone</button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="cream"><div class="wrap prose">
+  <div class="bt-answer">
+    <span class="kicker">Quick answer</span>
+    <p><b>Open Settings → Battery and look for Battery health or Maximum capacity.</b> On an iPhone it's Settings → Battery → Battery Health. 85% or more is healthy, 80–84% is getting weak, and below 80% means replace the battery soon. A swollen battery needs replacing straight away, whatever the %.</p>
+    <p class="bt-meta">By ${esc(S.brand)}, ${esc(S.address.city)} · Updated <time datetime="${PHONE_UPDATED.iso}">${PHONE_UPDATED.text}</time></p>
+  </div>
+
+  <h2>Where to find battery health on your phone</h2>
+  <table>
+    <thead><tr><th>Phone</th><th>Where to look</th><th>What it shows</th></tr></thead>
+    <tbody>
+      ${PHONE_BRANDS.map((b) => `<tr><td>${esc(b.name)}</td><td>${esc(b.where)}</td><td>${esc(b.shows)}</td></tr>`).join("\n      ")}
+    </tbody>
+  </table>
+  <p>Menus change with software updates and differ between models, so your phone may name it slightly differently. Realme's own support page gives the Realme path and recommends a service-centre check below 80% (<a href="https://realme.com/in/support/kw/doc/2134933" target="_blank" rel="noopener">realme.com</a>).</p>
+
+  <h2>Is my battery health good? (Battery health kitna hona chahiye)</h2>
+  <table>
+    <thead><tr><th>Battery health</th><th>What it means</th></tr></thead>
+    <tbody>
+      <tr><td>85–100%</td><td>Healthy. Nothing to do. <i>Battery sahi hai.</i></td></tr>
+      <tr><td>80–84%</td><td>Getting weak. Keep using it, and plan a replacement when the backup bothers you.</td></tr>
+      <tr><td>Below 80%</td><td>Replace soon. Backup is short and the phone may switch off at low charge. <i>Battery badalne ka time hai.</i></td></tr>
+    </tbody>
+  </table>
+  <p>80% is the line Apple and Realme use: below it, the battery counts as worn and they suggest a service.</p>
+
+  <h2>Signs your phone battery needs replacing (kharab hai ya sahi)</h2>
+  <ul>
+    <li><b>The phone switches off while it still shows charge</b>, often at 10–20%.</li>
+    <li><b>It no longer lasts a day</b> with the way you've always used it.</li>
+    <li><b>Battery health is below 80%</b> in Settings.</li>
+    <li><b>The back cover or screen is lifting.</b> That's a swollen battery: stop charging it, don't press on it, and get it replaced straight away.</li>
+  </ul>
+  <p>Heat and fast drain on their own are often an app, a setting or the charger rather than the battery. Settings → Battery shows which app uses the most.</p>
+
+  <h2>Questions people ask</h2>
+  ${faqHtml(PHONE_FAQ)}
+</div></section>
+
+<section><div class="wrap split" style="align-items:start">
+  <div>
+    <span class="kicker">Need a new battery?</span>
+    <h2>Mobile battery replacement in ${esc(S.address.city)}</h2>
+    <p>Bring your phone to ${esc(S.brand)} on Rosera – Hathori Kothi Road, or send us the brand and model on WhatsApp. We'll tell you the price and when it can be done, and replace the battery at the shop.</p>
+    <div class="cta-row">${waBtn("Ask for a battery price", "Hi Daksha Systems, please share the battery replacement price for my phone. Brand and model: ")}<a class="btn ghost dark-ink" href="/contact/">Find the shop</a></div>
+  </div>
+  <div>
+    <span class="kicker">Make it last</span>
+    <h2>Battery care that works</h2>
+    <ul class="checks">
+      <li>Charge between about 20% and 80% when you can, instead of 0 to 100</li>
+      <li>Don't charge under a pillow or leave the phone in a hot car or in the sun</li>
+      <li>Use a good charger and cable; a damaged or very cheap one can heat the battery</li>
+      <li>Turn on your phone's battery-protection or optimised-charging option if it has one</li>
+    </ul>
+  </div>
+</div></section>
+${cta()}
+<script src="/assets/phone-battery.js?v=${require("./layout").ver("phone-battery.js")}" defer></script>`,
+  };
+}
+
 const index = () => ({
   path: "/tools/",
   title: "Free Computer Tools",
-  description: `Free tools from ${S.brand}, ${S.address.city}: check your laptop battery health in your browser, with nothing to install and nothing uploaded.`,
+  description: `Free tools from ${S.brand}, ${S.address.city}: check your laptop or mobile battery health in your browser, with nothing to install and nothing uploaded.`,
   body: `${phead("/tools/", "Free tools", "Small, honest tools for common computer questions. They run in your browser, and nothing you check is uploaded.")}
 <section><div class="wrap"><div class="keys">${list.map((t) => `
   <a class="key" href="${t.path}">
@@ -214,4 +363,4 @@ const index = () => ({
 ${cta()}`,
 });
 
-module.exports = { list, battery, index, BATTERY_IC };
+module.exports = { list, battery, phoneBattery, index, BATTERY_IC };

@@ -1210,6 +1210,14 @@ Find out how much charge your laptop battery still holds, from the Windows batte
 
 Open →
 
+FREE
+
+## Mobile battery health check
+
+Find your phone's battery health in Settings, then find out if it's good or needs replacing. Works for iPhone, Samsung, Pixel, Realme and other Android phones.
+
+Open →
+
 ## Tell us what your business needs. We'll tell you honestly what it takes.
 
 ---
@@ -1243,6 +1251,8 @@ Drag it here, or tap to choose the file
 - Enter them below: Maximum Capacity in Holds now, and 100 in When new.
 
 This check runs on the laptop. Send this page to yourself and open it on the laptop you want to check.
+
+Checking this phone's battery instead? →
 
 **Type the numbers yourself**
 
@@ -1363,6 +1373,137 @@ Make it last
 - For long storage, leave the battery at about half charge
 
 ## Laptop slow, not charging or shutting down? We'll find out why.
+
+---
+
+Source: https://dakshasystems.com/tools/phone-battery-health-check/
+
+# Mobile battery health check
+
+- Find battery health in Settings.
+Your phone
+
+Choose your phone
+iPhoneSamsung GalaxyGoogle PixelRealmeVivo, Oppo, Redmi, OnePlus or another
+
+iPhone: Settings → Battery → Battery Health (called Battery Health & Charging on some iOS versions).
+
+Samsung Galaxy: Settings → Battery → Battery information, on newer One UI versions such as the Galaxy S25. On other models, open the Samsung Members app and run the battery test in phone diagnostics.
+
+Google Pixel: Settings → Battery → Battery health. Pixel 8a and newer, after the Android 16 update.
+
+Realme: Settings → Battery → Battery health → Maximum capacity, on recent models such as the realme 11 Pro+.
+
+Vivo, Oppo, Redmi, OnePlus or another: Open Settings → Battery and look for Battery health or Battery protection. Many of these phones don't show battery health at all.
+
+Battery health is not the charge level at the top of the screen. It's how much the battery holds compared with when it was new.
+
+- Type what it shows, and tick anything you've noticed.
+
+Battery health %
+My phone doesn't show a %
+
+Anything else? (optional)
+Switches off while it still shows charge
+Doesn't last a day / drains fast
+Gets hot while charging or in use
+Back or screen is lifting / battery looks swollen
+
+Everything is checked inside your browser. Nothing is uploaded.
+
+battery health
+
+##
+
+Visit the shop in Samastipur →
+
+Quick answer
+Open Settings → Battery and look for Battery health or Maximum capacity. On an iPhone it's Settings → Battery → Battery Health. 85% or more is healthy, 80–84% is getting weak, and below 80% means replace the battery soon. A swollen battery needs replacing straight away, whatever the %.
+
+By Daksha Systems, Samastipur · Updated 2 November 2026
+
+## Where to find battery health on your phone
+
+Phone | Where to look | What it shows
+
+iPhone | Settings → Battery → Battery Health (called Battery Health & Charging on some iOS versions) | Maximum Capacity, as a %
+
+Samsung Galaxy | Settings → Battery → Battery information, on newer One UI versions such as the Galaxy S25. On other models, open the Samsung Members app and run the battery test in phone diagnostics | A % on newer models; on others a word such as Normal or Weak
+
+Google Pixel | Settings → Battery → Battery health. Pixel 8a and newer, after the Android 16 update | Estimated capacity, as a %
+
+Realme | Settings → Battery → Battery health → Maximum capacity, on recent models such as the realme 11 Pro+ | Maximum capacity, as a %
+
+Vivo, Oppo, Redmi, OnePlus or another | Open Settings → Battery and look for Battery health or Battery protection. Many of these phones don't show battery health at all | Varies by model. If there's no %, use the symptoms below
+
+Menus change with software updates and differ between models, so your phone may name it slightly differently. Realme's own support page gives the Realme path and recommends a service-centre check below 80% (realme.com).
+
+## Is my battery health good? (Battery health kitna hona chahiye)
+
+Battery health | What it means
+
+85–100% | Healthy. Nothing to do. Battery sahi hai.
+
+80–84% | Getting weak. Keep using it, and plan a replacement when the backup bothers you.
+
+Below 80% | Replace soon. Backup is short and the phone may switch off at low charge. Battery badalne ka time hai.
+
+80% is the line Apple and Realme use: below it, the battery counts as worn and they suggest a service.
+
+## Signs your phone battery needs replacing (kharab hai ya sahi)
+
+- The phone switches off while it still shows charge, often at 10–20%.
+
+- It no longer lasts a day with the way you've always used it.
+
+- Battery health is below 80% in Settings.
+
+- The back cover or screen is lifting. That's a swollen battery: stop charging it, don't press on it, and get it replaced straight away.
+
+Heat and fast drain on their own are often an app, a setting or the charger rather than the battery. Settings → Battery shows which app uses the most.
+
+## Questions people ask
+
+**Battery health kitna hona chahiye?**
+85% ya usse zyada ho to battery sahi hai. 80% se 84% par battery thodi kamzor hai, abhi chal jayegi. 80% se kam ho to battery badalne ka time hai. Battery phooli hui ho to percentage kuch bhi ho, phone turant band kar dein.
+
+**Is 85% battery health good?**
+Yes. At 85% the battery still holds most of its original charge. You'll notice a little less backup than when the phone was new, but there's nothing to do yet.
+
+**Is 80% battery health good on an iPhone?**
+It's the borderline. Apple treats 80% as the point where a battery is worn, and below it the iPhone suggests a service. At 80–84% you can keep using it; plan a replacement when the backup bothers you.
+
+**Is there a code to check mobile battery health?**
+Many lists online give dial codes, but they disagree and none is confirmed by the phone makers. *#*#4636#*#* opens Android's testing menu; what it shows depends on the phone, and on many current phones there is no battery health in it. We don't list codes we haven't tested. If you open an engineering menu, don't change anything in it.
+
+**My phone doesn't show battery health. How do I check it?**
+Many Vivo, Oppo, Redmi and other Android phones don't show it in Settings. Go by the symptoms: if the phone switches off with charge left, can't last a day, or the battery looks swollen, the battery is worn. We can also test it at the shop.
+
+**Mobile battery jaldi khatam ho rahi hai, kya karein?**
+Pehle Settings → Battery mein dekhein kaun sa app sabse zyada battery le raha hai, aur screen brightness kam karein. Battery health 80% se kam ho, ya phone charge hote hue bhi band ho jaye, to battery badalni padegi.
+
+**Do you replace mobile batteries?**
+Yes, at our shop in Samastipur. Send us your phone's brand and model on WhatsApp and we'll reply with the price and when it can be done.
+
+Need a new battery?
+
+## Mobile battery replacement in Samastipur
+
+Bring your phone to Daksha Systems on Rosera – Hathori Kothi Road, or send us the brand and model on WhatsApp. We'll tell you the price and when it can be done, and replace the battery at the shop.
+
+Make it last
+
+## Battery care that works
+
+- Charge between about 20% and 80% when you can, instead of 0 to 100
+
+- Don't charge under a pillow or leave the phone in a hot car or in the sun
+
+- Use a good charger and cable; a damaged or very cheap one can heat the battery
+
+- Turn on your phone's battery-protection or optimised-charging option if it has one
+
+## Tell us what your business needs. We'll tell you honestly what it takes.
 
 ---
 

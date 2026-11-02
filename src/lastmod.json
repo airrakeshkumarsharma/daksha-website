@@ -80,12 +80,16 @@
   "date": "2026-11-01"
  },
  "/tools/": {
-  "hash": "46be057dad96",
-  "date": "2026-11-01"
+  "hash": "d2957b0f3f16",
+  "date": "2026-11-02"
  },
  "/tools/laptop-battery-health-check/": {
-  "hash": "9401614251ce",
-  "date": "2026-11-01"
+  "hash": "db08b29b1120",
+  "date": "2026-11-02"
+ },
+ "/tools/phone-battery-health-check/": {
+  "hash": "193ade4a522a",
+  "date": "2026-11-02"
  },
  "/warranty-policy/": {
   "hash": "ef9a907d60e1",

@@ -43,6 +43,7 @@ Key facts:
 ## Free tools
 
 - [Laptop battery health check](https://dakshasystems.com/tools/laptop-battery-health-check/): Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings. Runs in the browser; nothing is uploaded.
+- [Mobile battery health check](https://dakshasystems.com/tools/phone-battery-health-check/): Find your phone's battery health in Settings, then find out if it's good or needs replacing. Works for iPhone, Samsung, Pixel, Realme and other Android phones. Runs in the browser; nothing is uploaded.
 
 ## Policies
 

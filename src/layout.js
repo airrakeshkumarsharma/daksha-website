@@ -42,7 +42,7 @@ const POLICIES = [
   ["/warranty-policy/", "Warranty & Returns"],
 ];
 /* Pages that aren't in the header but still need a breadcrumb name. */
-const OTHER_PAGES = [["/what-we-do/", "What we do"], ["/tools/", "Free tools"], ["/tools/laptop-battery-health-check/", "Laptop battery health check"]];
+const OTHER_PAGES = [["/what-we-do/", "What we do"], ["/tools/", "Free tools"], ["/tools/laptop-battery-health-check/", "Laptop battery health check"], ["/tools/phone-battery-health-check/", "Mobile battery health check"]];
 
 /* Products and services as an OfferCatalog, so search engines and AI agents can see what is sold. */
 function catalog() {
