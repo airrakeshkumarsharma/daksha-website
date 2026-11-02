@@ -43,6 +43,21 @@
   showBrand();
   root.classList.add("live");
 
+  /* Live charge line. The Battery Status API (Chrome, Edge, Samsung Internet; not Safari or Firefox)
+     gives only the charge level and whether it's charging, never health, so the line says so. */
+  const live = $("#pb-live");
+  if (live && navigator.getBattery) {
+    navigator.getBattery().then((b) => {
+      const show = () => {
+        live.textContent = `This phone is at ${Math.round(b.level * 100)}% charge${b.charging ? " and charging" : ""} right now. That's the charge level, not battery health: health is in Settings, below.`;
+        live.hidden = false;
+      };
+      show();
+      b.addEventListener("levelchange", show);
+      b.addEventListener("chargingchange", show);
+    }).catch(() => {});
+  }
+
   const none = $("#pb-none"), pctIn = $("#pb-pct");
   none.addEventListener("change", () => { pctIn.disabled = none.checked; if (none.checked) pctIn.value = ""; });
 

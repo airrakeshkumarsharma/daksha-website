@@ -238,6 +238,7 @@ function phoneBattery() {
     body: `${phead(p, "Mobile battery health check").replace('class="phead"', 'class="phead slim"')}
 <section class="bt-sec"><div class="wrap">
   <div class="bt" id="pb">
+    <p class="pb-live" id="pb-live" role="status" hidden></p>
     <ol class="bt-steps">
       <li><b>Find battery health in Settings.</b>
         <label class="pb-pick">Your phone

@@ -460,6 +460,7 @@ body.has-list{padding-bottom:72px}
 .pb-sym{border:0;padding:0;margin:4px 0 0;display:grid;gap:10px}
 .pb-sym legend{font-size:.92rem;font-weight:600;padding:0;margin-bottom:8px}
 .bt-form input:disabled{background:var(--cream);opacity:.6}
+.pb-live{margin:0 0 14px;padding:10px 12px;border-radius:10px;background:var(--paper);border:1px solid var(--rule);font-size:.92rem}
 .pb-hing{font-style:italic;color:var(--muted)!important;margin-top:-.2em}
 #pb-cta .btn svg{width:20px;height:20px}
 .bt-phone-alt{margin-top:14px}
