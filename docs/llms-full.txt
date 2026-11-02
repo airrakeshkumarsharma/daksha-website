@@ -1308,25 +1308,17 @@ Yes. Restore a backup on the new computer. The licence is tied to a computer, so
 
 Source: https://dakshasystems.com/tools/
 
-# Free tools
+# Free tools for your laptop and phone
 
-Small, honest tools for common computer questions. They run in your browser, and nothing you check is uploaded.
-
-FREE
+Small, honest checks for common questions. They run in your browser, they're free, and nothing you check is uploaded.
 
 ## Laptop battery health check
 
 Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings.
 
-Open →
-
-FREE
-
 ## Mobile battery health check
 
 Find your phone's battery health in Settings, then find out if it's good or needs replacing. Works for iPhone, Samsung, Pixel, Realme and other Android phones.
-
-Open →
 
 ## Tell us what your business needs. We'll tell you honestly what it takes.
 

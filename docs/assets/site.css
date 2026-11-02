@@ -465,3 +465,25 @@ body.has-list{padding-bottom:72px}
 .bt-phone-alt{margin-top:14px}
 .bt-link.dark{color:#7A5E00}
 @media (max-width:600px){.bt{padding:16px}.bt-result{grid-template-columns:1fr;justify-items:start;padding:20px}.bt-ring{width:130px;height:130px}.bt-ring span{width:102px;height:102px}.bt-tabs button{font-size:.85rem}}
+
+/* Tools hub (/tools/): light centred header, chips, compact card grid */
+.tl-head{padding:44px 0 8px;text-align:center}
+.tl-head .crumbs{text-align:left;color:var(--text-2)}.tl-head .crumbs a{color:var(--text-2)}.tl-head .crumbs span{color:#7A5E00}
+.tl-head h1{font-size:clamp(2rem,4.6vw,3.4rem);max-width:16em;margin:8px auto 14px}
+.tl-head p{font-size:1.15rem;color:var(--text-2);max-width:38em;margin:0 auto}
+.tl-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:30px 0 0}
+.tl-chips button{min-height:44px;padding:0 20px;border:1px solid var(--rule);border-radius:999px;background:#fff;color:var(--text);font:500 1rem var(--body);cursor:pointer}
+.tl-chips button:hover{border-color:var(--ink)}
+.tl-chips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.tl-sec{padding:32px 0 80px}
+.tl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,300px));justify-content:center;gap:20px}
+.tl-card{display:block;background:#fff;border:1px solid var(--rule);border-radius:14px;padding:26px 26px 28px;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}
+.tl-card:hover,.tl-card:focus-visible{border-color:var(--ink);box-shadow:0 6px 18px rgba(30,28,23,.08)}
+.tl-card h2{font-size:1.35rem;line-height:1.2;margin:20px 0 10px}
+.tl-card p{font-size:.95rem;color:var(--text-2);margin:0}
+.tl-card[hidden]{display:none}
+.tl-ic{display:grid;place-items:center;width:52px;height:52px;border-radius:12px}
+.tl-ic svg{width:34px;height:34px}
+.tl-ic.green{background:#E3F3E8;color:#2F8F55}
+.tl-ic.blue{background:#E4ECFB;color:#3563C9}
+@media (max-width:600px){.tl-head{padding-top:28px}.tl-chips{margin-top:22px}.tl-grid{grid-template-columns:1fr}}

@@ -1,8 +1,7 @@
 /* Free tools. Each tool page keeps its steps, tables and FAQ in plain HTML (search engines and
    llms-full.txt read them); the interactive part is a small script in docs/assets/. */
-const { esc, url, S, WA_ICON } = require("./layout");
+const { esc, url, S, WA_ICON, crumbsHtml } = require("./layout");
 const { phead, cta, faqSchema, faqHtml, waBtn } = require("./pages");
-const { ICONS } = require("./services");
 
 const UPDATED = { iso: "2026-11-01", text: "1 November 2026" };
 const PHONE_UPDATED = { iso: "2026-11-02", text: "2 November 2026" };
@@ -13,9 +12,9 @@ const CMD = "powercfg /batteryreport";   // plain form works in both Command Pro
 const QUICK = "powercfg /batteryreport && battery-report.html";
 
 const list = [
-  { path: "/tools/laptop-battery-health-check/", name: "Laptop battery health check",
+  { path: "/tools/laptop-battery-health-check/", name: "Laptop battery health check", cat: "laptop", tone: "green",
     card: "Find out how much charge your laptop battery still holds, from the Windows battery report or your MacBook's settings." },
-  { path: "/tools/phone-battery-health-check/", name: "Mobile battery health check",
+  { path: "/tools/phone-battery-health-check/", name: "Mobile battery health check", cat: "mobile", tone: "blue",
     card: "Find your phone's battery health in Settings, then find out if it's good or needs replacing. Works for iPhone, Samsung, Pixel, Realme and other Android phones." },
 ];
 
@@ -30,7 +29,6 @@ const BATTERY_FAQ = [
 ];
 
 const ic = (d) => `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
-const BATTERY_IC = `<svg viewBox="0 0 64 64" fill="none" stroke="#EBB909" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="20" width="46" height="24" rx="4"/><path d="M52 28h5v8h-5"/><path d="M14 28v8M22 28v8M30 28v8"/></svg>`;
 
 function battery() {
   const p = list[0].path;
@@ -348,20 +346,32 @@ ${cta()}
   };
 }
 
+/* Tools hub: a light, centred header, category chips and a grid of compact cards (layout modelled on
+   iLovePDF's tool grid). Chips filter in site.js; without JS every card shows. */
+const CATS = [["laptop", "Laptop"], ["mobile", "Mobile"]];
+const TOOL_IC = {
+  laptop: `<svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="26" height="17" rx="2"/><path d="M3 31h34"/><rect x="13" y="14" width="12" height="7" rx="1.5"/><path d="M25 16.5h2v2h-2M16 16v3M19 16v3"/></svg>`,
+  mobile: `<svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="4" width="18" height="32" rx="4"/><path d="M17 8h6"/><rect x="15.5" y="14" width="9" height="15" rx="1.5"/><path d="M18.5 12h3M18 25h4M18 21h4"/></svg>`,
+};
+
 const index = () => ({
   path: "/tools/",
   title: "Free Computer Tools",
   description: `Free tools from ${S.brand}, ${S.address.city}: check your laptop or mobile battery health in your browser, with nothing to install and nothing uploaded.`,
-  body: `${phead("/tools/", "Free tools", "Small, honest tools for common computer questions. They run in your browser, and nothing you check is uploaded.")}
-<section><div class="wrap"><div class="keys">${list.map((t) => `
-  <a class="key" href="${t.path}">
-    <span class="cap">FREE</span>
-    <div class="ic">${t.path.includes("phone") ? ICONS.phone : BATTERY_IC}</div>
+  body: `<section class="tl-head"><div class="wrap">${crumbsHtml("/tools/")}
+  <h1>Free tools for your laptop and phone</h1>
+  <p>Small, honest checks for common questions. They run in your browser, they're free, and nothing you check is uploaded.</p>
+  <div class="tl-chips" role="group" aria-label="Show tools for">
+    <button type="button" data-cat="" aria-pressed="true">All</button>${CATS.map(([id, n]) => `<button type="button" data-cat="${id}" aria-pressed="false">${n}</button>`).join("")}
+  </div>
+</div></section>
+<section class="tl-sec"><div class="wrap"><div class="tl-grid">${list.map((t) => `
+  <a class="tl-card" href="${t.path}" data-cat="${t.cat}">
+    <span class="tl-ic ${t.tone}">${TOOL_IC[t.cat]}</span>
     <h2>${esc(t.name)}</h2>
     <p>${esc(t.card)}</p>
-    <span class="more">Open →</span>
   </a>`).join("")}</div></div></section>
 ${cta()}`,
 });
 
-module.exports = { list, battery, phoneBattery, index, BATTERY_IC };
+module.exports = { list, battery, phoneBattery, index };

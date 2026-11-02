@@ -85,3 +85,12 @@
   }));
   document.getElementById("listclear").addEventListener("click", () => { list.clear(); render(); });
 })();
+
+/* Tools hub: category chips show only that category's cards. */
+(() => {
+  const chips = document.querySelectorAll(".tl-chips [data-cat]");
+  chips.forEach((b) => b.addEventListener("click", () => {
+    chips.forEach((x) => x.setAttribute("aria-pressed", x === b));
+    document.querySelectorAll(".tl-card").forEach((c) => { c.hidden = !!b.dataset.cat && c.dataset.cat !== b.dataset.cat; });
+  }));
+})();
